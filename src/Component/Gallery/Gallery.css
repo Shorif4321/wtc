@@ -1,0 +1,91 @@
+.gallery-banner {
+    background-image: url(../../img/gallary.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #005AA6;
+}
+
+
+.gallery-banner h1 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 60px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0 0 20px 0;
+}
+.gallery-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.gallery-head h1 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #2B2B2B;
+    text-align: left;
+}
+
+.gallery-head button {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF;
+    background-color: #00A652;
+    width: auto;
+    height: 60px;
+    padding: 15px 20px;
+    border: 1px solid;
+    text-align: center;
+
+}
+.arrow-image{
+    width: 15px;
+}
+
+@media only screen and (max-width: 667px) {
+    .gallery-banner h1 {
+        font-size: 25px;
+        margin: 0 0 0px 0;
+    }
+    
+    .gallery-head{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .gallery-head h1 {
+        font-size: 23px;
+        text-align: center;
+        line-height: 34px;
+        margin-top: 20px;
+        padding: 5px;
+    }
+    br{
+        display: none;
+    }
+    
+    .gallery-head button {
+        width: 70%;
+        margin: 15px 0 15px 0;
+
+    }
+    .arrow-image{
+        width: 15px;
+    }
+
+}
+@media only screen and (max-width:991px) and (min-width:668px){}
+@media only screen and (max-width: 1200px) and (min-width:992px) {}

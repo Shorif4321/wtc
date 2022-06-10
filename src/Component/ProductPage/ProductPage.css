@@ -1,0 +1,128 @@
+.product-hero {
+    background-color: #005AA6;
+}
+
+.product-hero h1 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 125%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.product-hero p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+   /*  margin: 0; */
+}
+
+.custom-service, .about-text, .latest{
+    color: #00A652;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+.custom-service-2, .about-h, .img-text{
+    font-size: 38px;
+    line-height: 45px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+.service-btn, .custom-padding{
+    font-size: 16px;
+    line-height: 28px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    padding: 16px 32px;
+    border-radius: 0px;
+    background-color: #00A652;
+}
+.bg-none{
+    background-color: #ffffff;
+    border: none;
+    color: #00A652;
+}
+.btn-card{
+    font-size: 18px;
+    line-height: 22px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    text-align: left;
+}
+.btn-success:hover {
+    color: #218838;
+    background-color: #fff;
+    transition: 0.6s;
+}
+.img-box{
+    background: rgba(25,64,121,0.8);
+    width: 446px;
+    height: 150px;
+    position: absolute;
+    left: 22%;
+    top: 69%;
+}
+.img-box-2{
+    background: rgba(25,64,121,0.8);
+    width: 350px;
+    height: 56px;
+    position: absolute;
+    left: 0;
+    top: 81%;
+}
+.next-btn{
+    width: 78px;
+    height: 60px;
+    background-color: #218838;
+    opacity: 0.3;
+    border-radius: 0px;
+}
+.next-btn:hover{
+    background-color: #218838;
+    opacity: 1;
+    transition: 0.6s;
+    color: #fff;
+}
+.title button{
+    float: right;
+    margin-left: 15px;
+}
+.arrowButton{
+    margin: auto;
+    margin-bottom: 25px;
+}
+.rightButton{
+    background-color: #00A652;
+    border: 0px;
+    padding: 3px 10px;
+    margin: 0 0 0 6px;
+    border: 1px solid #00A652;
+}
+.rightButton:hover{
+    background-color: #218838;
+    border: 0px;
+    padding: 3px 10px;
+    margin: 0 0 0 6px;
+}
+@media only screen and (max-width: 667px) {    
+.product-hero h1 {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 34px;
+}
+}
+@media only screen and (max-width:991px) and (min-width:668px){
+    .product-hero h1 {
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 34px;
+    }
+ }

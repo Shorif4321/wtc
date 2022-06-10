@@ -1,0 +1,14 @@
+.about-section{
+    position: relative;
+}
+.about-position{
+    position: relative;
+}
+.custom-btn{
+    text-align: left;
+}
+.about-icon-text{
+    font-weight: 500;
+    position: absolute;
+    left: 20% !important;
+}

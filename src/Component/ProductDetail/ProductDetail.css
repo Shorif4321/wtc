@@ -1,0 +1,51 @@
+.details-head {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #005AA6;
+    margin: -10px 0 -10px 0px;
+}
+
+.product-details {}
+
+.product-details p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #000000;
+    text-align: left;
+    margin: 30px 0px -10px 0px;
+}
+
+
+@media only screen and (max-width: 667px) {
+    .details-head {
+        font-size: 25px;
+        line-height: 32px;
+        margin: 0px 0 0px 0px;
+    }
+
+    .product-details p {
+        margin: 20px 0px 20px 0px;
+    }
+    
+}
+
+@media only screen and (max-width:991px) and (min-width:668px) {
+    .details-head {
+        font-size: 35px;
+        line-height: 32px;
+        margin: -7px 0 -7px 0px;
+    }
+
+    .product-details p {
+        margin: 25px 0px 25px 0px;
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width:992px) {}

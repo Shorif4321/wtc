@@ -1,0 +1,40 @@
+
+.navbar-expand-md .navbar-nav .nav-link {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+.dropdown-menu{
+    border-top: 1px solid white;
+    margin-top: 7px;
+    padding: 0px 0px;
+}
+.dropdown-item:hover, .dropdown-item:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: #194079;
+}
+.dropdown-item {
+    padding: 16px 12px;
+}
+.nav-mr{
+    padding-right: 10px;
+    padding-left: 10px;
+    border-right: 1.5px solid lightgray;
+}
+.nav-mr{
+    padding-right: 10px;
+    padding-left: 10px;
+    border-right: 1.5px solid lightgray;
+}
+.nav-mr:last-child{
+    border-right: 0px;
+}
+.bg-color{
+    background-color: #00A652;
+    color: white;
+}
+.color-white{
+    color: white;
+}

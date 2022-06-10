@@ -1,0 +1,161 @@
+.newsFeed-banner {
+    background-image: url(../../img/newsfeed.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.newsFeed-banner h1 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 60px;
+    letter-spacing: 0.01em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0 0 20px 0;
+}
+
+.newsFeed-banner p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.newsFeed {}
+
+.newsFeed img {}
+
+.newsFeed h1 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 34px;
+    color: #2B2B2B;
+    margin: 24px 0 14px 0;
+}
+
+.special-text {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6C6B6B;
+}
+
+.newsFeed p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #403F3F;
+    margin: 20px 0 24px 0;
+}
+
+.newsFeed button {
+    color: #FFFFFF;
+    background-color: #00A652;
+    border: 1px solid #00A652;
+    padding: 8px 16px;
+}
+
+.search {
+    background: #DCE8F6;
+    padding: 30px;
+}
+
+.search h3 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 31px;
+    color: #2B2B2B;
+}
+
+.search p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 33px;
+    color: #403F3F;
+}
+
+.form-control {
+    width: 82%;
+}
+
+.search input {
+    padding: 20px 30px;
+}
+
+.placeholder {}
+
+/* .search button {
+    border-radius: 0;
+    background-color: #00A652;
+    padding: 8px 16px
+} */
+@media only screen and (max-width: 667px) {
+    
+.newsFeed-banner h1 {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 0px;
+    margin: 0 0 0px 0;
+}
+
+
+.newsFeed h1 {
+    font-size: 25px;
+    line-height: 30px;
+    margin: 20px 0 14px 0;
+}
+
+.newsFeed p {
+    font-size: 16px;
+    line-height: 25px;
+    margin: 15px 0 20px 0;
+}
+
+.newsFeed button {
+    padding: 7px 12px;
+}
+
+.search {
+    background: #DCE8F6;
+    padding: 1px 20px;
+}
+
+.search h3 {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 28px;
+}
+
+.search p {
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.form-control {
+    width: 82%;
+}
+
+.search input {
+    padding: 20px 30px;
+}
+}
+@media only screen and (max-width:991px) and (min-width:668px){}
+@media only screen and (max-width: 1200px) and (min-width:992px) {}
