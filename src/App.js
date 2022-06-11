@@ -1,3 +1,5 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import * as React from "react";
 import './App.css';
 import AboutUs from './Component/AboutUs/AboutUs';
 import Contact from './Component/Contact/Contact';
@@ -5,29 +7,34 @@ import Event from './Component/Event/Event';
 import Gallery from './Component/Gallery/Gallery';
 import Home from './Component/Home/Home';
 import NewsFeed from './Component/NewsFeed/NewsFeed';
-import ProductDetail from './Component/ProductDetail/ProductDetail';
 import ProductPage from './Component/ProductPage/ProductPage';
-import ServiceDetails from './Component/ServiceDetails/ServiceDetails';
 import Footer from './Component/Shared/Footer/Footer';
 import Header from './Component/Shared/Header/Header';
-import HeadTop from './Component/Shared/HeadTop/HeadTop';
+import Service from './Component/Home/Service/Service';
+import NotFound from './Component/NotFound/NotFound';
+
 
 function App() {
   return (
     <div className="App">
-      <HeadTop></HeadTop>
-      <Header></Header>
-       {/* <Home></Home> 
-      <ProductPage></ProductPage> 
-      <ProductDetail></ProductDetail>
-      <AboutUs></AboutUs>
-      <ServiceDetails></ServiceDetails>
-      <NewsFeed></NewsFeed>
-      <Event></Event>
-      <Gallery></Gallery>*/}
-      <Contact></Contact>
-      
-      <Footer></Footer>
+      <BrowserRouter>
+        <Header></Header>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="about-us" element={<AboutUs />} />
+          <Route path="Product" element={<ProductPage />} />
+          <Route path="service" element={<Service />} />
+          <Route path="news-feed" element={<NewsFeed />} />
+          <Route path="event" element={<Event />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="contact-us" element={<Contact />} />
+          <Route path="*" element={<NotFound/>} />
+        </Routes>
+        <Footer></Footer>
+      </BrowserRouter>
+
+
     </div>
   );
 }

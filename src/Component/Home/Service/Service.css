@@ -1,17 +1,68 @@
-.custom-service, .about-text, .latest{
+.home-service h6 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #00A652;
+}
+
+.home-service h2 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #2B2B2B;
+    margin-top: 16px;
+
+}
+
+.home-service1 {
+    text-align: left;
+}
+
+.home-service2 {
+    text-align: right;
+}
+
+.home-service button {
+    background-color: #00A652;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF;
+    padding: 16px 32px;
+    border: 1px solid #00A652;
+}
+
+
+
+.custom-service,
+.about-text,
+.latest {
     color: #00A652;
     font-size: 16px;
     line-height: 20px;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
 }
-.custom-service-2, .about-h, .img-text{
+
+.custom-service-2,
+.about-h,
+.img-text {
     font-size: 38px;
     line-height: 45px;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
 }
-.service-btn, .custom-padding{
+
+/* .service-btn, .custom-padding{
     font-size: 16px;
     line-height: 28px;
     font-family: 'Inter', sans-serif;
@@ -19,54 +70,88 @@
     padding: 16px 32px;
     border-radius: 0px;
     background-color: #00A652;
-}
-.bg-none{
+} */
+.bg-none {
     background-color: #ffffff;
     border: none;
     color: #00A652;
 }
-.btn-card{
+
+.btn-card {
     font-size: 18px;
     line-height: 22px;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     text-align: left;
 }
+
 .btn-success:hover {
     color: #218838;
     background-color: #fff;
     transition: 0.6s;
 }
-.img-box{
-    background: rgba(25,64,121,0.8);
+
+.img-box {
+    background: rgba(25, 64, 121, 0.8);
     width: 446px;
     height: 150px;
     position: absolute;
     left: 22%;
     top: 69%;
 }
-.img-box-2{
-    background: rgba(25,64,121,0.8);
+
+.img-box-2 {
+    background: rgba(25, 64, 121, 0.8);
     width: 350px;
     height: 56px;
     position: absolute;
     left: 0;
     top: 81%;
 }
-.next-btn{
+
+.next-btn {
     width: 78px;
     height: 60px;
     background-color: #218838;
     opacity: 0.3;
     border-radius: 0px;
 }
-.next-btn:hover{
+
+.next-btn:hover {
     background-color: #218838;
     opacity: 1;
     transition: 0.6s;
     color: #fff;
 }
-.title button{
+
+/* .title button{
     float: right;
     margin-left: 15px;
+} */
+
+@media only screen and (max-width: 667px) {
+  
+    .home-service h2 {
+        font-size: 25px;
+        line-height: 120%;
+        margin-bottom: 25px;
+    
+    }
+    
+    .home-service1 {
+        text-align: center;
+    }
+    
+    .home-service2 {
+        text-align: center;
+    }
+    
+    .home-service button {
+        padding: 12px 15px;
+    }
+
 }
+
+@media only screen and (max-width:991px) and (min-width:668px) {}
+
+@media only screen and (max-width: 1200px) and (min-width:992px) {}

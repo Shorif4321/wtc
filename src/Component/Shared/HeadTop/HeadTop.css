@@ -68,3 +68,15 @@
     color: #005AA6;
     margin-right: 5px;
 }
+
+@media only screen and (max-width: 667px) {
+    .header-section{
+        display: none;
+    }
+}
+@media only screen and (max-width:991px) and (min-width:668px){
+    .header-section{
+        display: none;
+    }
+}
+@media only screen and (max-width: 1200px) and (min-width:992px) {}

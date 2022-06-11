@@ -9,7 +9,7 @@ import location from "../../../img/location icons.svg"
 const HeadTop = () => {
     return (
         <div>
-            <section className="bg-white py-3">
+            <section className="header-section bg-white py-3">
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12">

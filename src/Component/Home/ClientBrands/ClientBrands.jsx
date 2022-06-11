@@ -23,7 +23,7 @@ const ClientBrands = () => {
                         <div class="owl-carousel owl-theme mt-2">
                             <div class="item mb-4">
                                 <div class="card border-0 mr-5 mt-2">
-                                    <img src={i1} class="img-fluid" alt="" />
+                                    <img className='img-fluid' src={i1} class="img-fluid" alt="" />
                                 </div>
                             </div>
                             <div class="item mb-4">

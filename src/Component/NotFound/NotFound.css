@@ -1,0 +1,19 @@
+.error-page h1 {
+    font-size: 200px;
+}
+
+@media only screen and (max-width: 667px) {
+    .error-page h1 {
+        font-size: 100px;
+        margin-top: 30px;
+    }
+
+    .des {
+        width:auto;
+    }
+
+}
+
+@media only screen and (max-width:991px) and (min-width:668px) {}
+
+@media only screen and (max-width: 1200px) and (min-width:992px) {}
