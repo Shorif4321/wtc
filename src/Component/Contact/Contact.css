@@ -33,6 +33,28 @@
     color: #2B2B2B;
 
 }
+.map-left {}
+
+.map-left h2 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #2B2B2B;
+}
+
+.map-left h4 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #2B2B2B;
+}
+
 
 .contact-from {}
 
@@ -89,62 +111,81 @@
 }
 
 @media only screen and (max-width: 667px) {
-    
-.contact-banner h1 {
-    font-size: 25px;
-    margin: 0 0 0px 0;
+
+    .contact-banner h1 {
+        font-size: 25px;
+        margin: 0 0 0px 0;
+    }
+
+    .from-main {
+        padding: 10px;
+    }
+
+    .from-main h1 {
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 46px;
+        text-transform: uppercase;
+        color: #2B2B2B;
+
+    }
+
+    .map-left {}
+
+    .map-left h2 {
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+    .map-left h4 {
+        font-size: 19px;
+        line-height: 40px;
+    }
+
+    .contact-from {}
+
+    .contact-from input {
+        margin-bottom: 30px;
+    }
+
+    .contact-from ::placeholder {
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: capitalize;
+
+        color: #949191;
+
+    }
+
+    .form-group {
+        padding: 0 20px;
+    }
+
+    .textarea-box {
+        padding: 0;
+
+    }
+
+    .textarea {
+        padding: 10px;
+    }
+
+    .form-check {
+        line-height: 25px;
+    }
+
+    .form-button {
+        padding: 12px 20px;
+        margin: 20px 0;
+    }
+
 }
 
+@media only screen and (max-width:991px) and (min-width:668px) {}
 
-.from-section h1 {
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 38px;
-    line-height: 46px;
-    text-transform: uppercase;
-    color: #2B2B2B;
-
-}
-
-.contact-from {}
-
-.contact-from input {
-    margin-bottom: 30px;
-}
-
-.contact-from ::placeholder {
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    text-transform: capitalize;
-
-    color: #949191;
-
-}
-.form-group{
-    padding: 0 20px;
-}
-.textarea-box {
-    padding: 0;
-
-}
-
-.textarea {
-    padding: 10px;
-}
-
-.form-check {
-    line-height: 25px;
-}
-
-.form-button {
-    padding: 12px 20px;
-    margin: 20px 0;
-}
-
-}
-@media only screen and (max-width:991px) and (min-width:668px){}
 @media only screen and (max-width: 1200px) and (min-width:992px) {}

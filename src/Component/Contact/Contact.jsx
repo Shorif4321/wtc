@@ -20,7 +20,7 @@ const Contact = () => {
                         <img className='img-fluid' src={map} alt="" />
 
                     </div>
-                    <div className="col-12  col-md-5 text-left ml-md-3">
+                    <div className="map-left col-12  col-md-5 text-left ml-md-3">
                         <h2>Find Us</h2>
                         <h4>Location:</h4>
                         <p>123, New Lenox Chicago, IL 60606</p>
@@ -41,7 +41,7 @@ const Contact = () => {
                         <input className='mx-md-2 col-12 col-md-6' type="email" placeholder='Email' />
                     </div>
                     <div className='textarea-box'>
-                        <textarea className='w-100 ' name="Message" id="" cols="" rows="7" placeholder='Messages'></textarea>
+                        <textarea className='w-100 p-3' name="Message" id="" cols="" rows="7" placeholder='Messages'></textarea>
                     </div>
                     <div class="form-group row">
                         <div class="col-12 text-center">
