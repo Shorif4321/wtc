@@ -1,3 +1,6 @@
+.latest-head{
+    text-align: left;
+}
 .custom-service, .about-text, .latest{
     color: #00A652;
     font-size: 16px;
@@ -73,6 +76,9 @@
 }
 
 @media only screen and (max-width: 667px) {
+    .latest-head{
+        text-align: center;
+    }
 }
 @media only screen and (max-width:991px) and (min-width:668px){}
 @media only screen and (max-width: 1200px) and (min-width:992px) {}

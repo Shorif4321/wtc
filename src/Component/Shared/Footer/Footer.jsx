@@ -9,44 +9,44 @@ import location from "../../../img//Location-solid white-icons.svg"
 const Footer = () => {
     return (
         <div>
-            <section class="pt-5 footer-bg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3  mt-4 col-sm-12 text-sm-center text-md-left mb-sm-3">
+            <section className="pt-5 footer-bg">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-3  mt-4 col-sm-12 text-sm-left text-md-left mb-sm-3">
                             <img className='footerLogo' src={fl} style={{width: "150px", height: "75px"}} alt="" />
                         </div>
 
-                        <div class="col-md-9 col-sm-12">
-                            <div class="footer-part p-4 ml-12">
-                                <div class="row">
-                                    <div class="col-lg-6 col-sm-12">
-                                        <div class="br-right">
-                                            <img src={email} class="img-fluid float-left mr-4" alt="" />
-                                            <p class="footer-p mr-3 f-sm-12">Main Email : info@example.com </p>
-                                            <p class="footer-p f-sm-12">Inquiries : Info@example2.com</p>
+                        <div className="col-md-9 col-sm-12">
+                            <div className="footer-part p-4 ml-12">
+                                <div className="row">
+                                    <div className="col-lg-6 col-sm-12">
+                                        <div className="br-right">
+                                            <img src={email} className="img-fluid float-left mr-4" alt="" />
+                                            <p className="footer-p mr-3 f-sm-12">Main Email : info@example.com </p>
+                                            <p className="footer-p f-sm-12">Inquiries : Info@example2.com</p>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 col-sm-12">
-                                        <div class="footer-phone">
-                                            <img src={fb} class="img-fluid float-left mr-4" alt="" />
-                                            <p class="footer-p">Office Telephone : 0029129102320 </p>
-                                            <p class="footer-p"> Mobile : 000 2324 39493</p>
+                                    <div className="col-lg-6 col-sm-12">
+                                        <div className="footer-phone">
+                                            <img src={fb} className="img-fluid float-left mr-4" alt="" />
+                                            <p className="footer-p">Office Telephone : 0029129102320 </p>
+                                            <p className="footer-p"> Mobile : 000 2324 39493</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="footer-content mt-5">
-                        <div class="row justify-content-between">
-                            <div class="col-lg-3 col-sm-12 text-left">
+                    <div className="footer-content mt-5">
+                        <div className="row justify-content-between">
+                            <div className="col-lg-3 col-sm-12 text-left">
                                 <h6>About Us</h6>
                                 <p className='w-100 text-left'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Metus at ac odio pellentesque nulla
                                     quis nunc consequat in.</p>
-                                {/* <div class="col-lg-7 col-sm-12 about-position">
-                                    <ul style={{paddingLeft: "0px"}} class="header-links float-left mt-3 m-sm-auto">
-                                        <li><a href="#"><img src={location} class="img-fluid float-left mt-3" alt="" />
-                                            <p class="ml-5 mb-4">2416 Mapleview Drive <span class="float-left">Tampa, FL
+                                {/* <div className="col-lg-7 col-sm-12 about-position">
+                                    <ul style={{paddingLeft: "0px"}} className="header-links float-left mt-3 m-sm-auto">
+                                        <li><a href="#"><img src={location} className="img-fluid float-left mt-3" alt="" />
+                                            <p className="ml-5 mb-4">2416 Mapleview Drive <span className="float-left">Tampa, FL
                                                 33634</span></p>
                                         </a></li>
                                     </ul>
@@ -61,7 +61,7 @@ const Footer = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-2 col-sm-12 text-left">
+                            <div className="col-lg-2 col-sm-12 text-left">
                                 <ul>
                                     <li>Useful Links</li>
                                     <li>About Us</li>
@@ -73,7 +73,7 @@ const Footer = () => {
                                     <li>Event</li>
                                 </ul>
                             </div>
-                            <div class="col-lg-3 col-sm-12 text-left">
+                            <div className="col-lg-3 col-sm-12 text-left">
                                 <ul>
                                     <li>Services</li>
                                     <li> Environment Impact Assessment (EIA)</li>
@@ -83,7 +83,7 @@ const Footer = () => {
                                     <li>3R Policy</li>
                                 </ul>
                             </div>
-                            <div class="col-lg-3 col-sm-12 text-left">
+                            <div className="col-lg-3 col-sm-12 text-left">
                                 <ul>
                                     <li>Contact Info</li>
                                     <li>Address:</li>
@@ -93,14 +93,14 @@ const Footer = () => {
                                     <li>Factory:</li>
                                     <li>329/330, DIT Industrial Area, Tongi,</li>
                                     <li>Gazipur</li>
-                                    <li class="mt-3">
-                                        <div class="social-links-footer">
+                                    <li className="mt-3">
+                                        <div className="social-links-footer">
                                             <a href="#" target="_blank"><i style={{fontSize:"14px"}}
-                                                class="fab fa-facebook-f"></i></a>
+                                                className="fab fa-facebook-f"></i></a>
                                             <a href="#" target="_blank"><i  style={{fontSize:"14px"}}
-                                                class="fab fa-twitter"></i></a>
+                                                className="fab fa-twitter"></i></a>
                                             <a href="#" target="_blank"><i  style={{fontSize:"14px"}}
-                                                class="fab fa-instagram"></i></a>
+                                                className="fab fa-instagram"></i></a>
                                         </div>
                                     </li>
                                 </ul>
@@ -109,13 +109,13 @@ const Footer = () => {
                     </div>
                 </div>
             </section >
-            <section class="footer-bg footer-border">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 ">
-                            <div class="footer-end mt-5">
-                                <p class="float-left">@2022 Top It Ltd. All rights reserved.</p>
-                                <p class=" float-right pl-5 footer-pr">Partner & Contribute</p>
+            <section className="footer-bg footer-border">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-12 ">
+                            <div className="footer-end mt-5">
+                                <p className="float-left">@2022 Top It Ltd. All rights reserved.</p>
+                                <p className=" float-right pl-5 footer-pr">Partner & Contribute</p>
                             </div>
                         </div>
                     </div>

@@ -102,15 +102,20 @@
 .rightButton{
     background-color: #00A652;
     border: 0px;
-    padding: 3px 10px;
-    margin: 0 0 0 6px;
+    padding: 14px 24px;
+    margin: 15px 16px 15px 15px;
     border: 1px solid #00A652;
 }
 .rightButton:hover{
     background-color: #218838;
     border: 0px;
-    padding: 3px 10px;
-    margin: 0 0 0 6px;
+    padding: 14px 24px;
+    margin: 15px 16px 15px 15px;
+    border: 1px solid #00A652;
+    color: black;
+    background-color: #00a65373; 
+    transition: 0.3s ease-in
+    
 }
 @media only screen and (max-width: 667px) {    
 .product-hero h1 {
@@ -118,6 +123,11 @@
     font-size: 25px;
     line-height: 34px;
 }
+.custom-service-2, .about-h, .img-text{
+    font-size: 25px;
+    line-height: 40px;
+}
+
 }
 @media only screen and (max-width:991px) and (min-width:668px){
     .product-hero h1 {

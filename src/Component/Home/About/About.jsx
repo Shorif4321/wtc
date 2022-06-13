@@ -6,54 +6,54 @@ import location from "../../../img/location icons.svg"
 const About = () => {
     return (
         <div>
-            <section class="py-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-sm-6">
-                    <div class="about-section">
-                        <img src={aboutImag} class="card-img-top img-fluid" alt="" />
-                        <div class="img-box">
-                            <h2 class="text-white img-text font-weight-bold text-left mt-4 ml-5">10+ Years <br />Working
-                                Experience</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-6">
-                    <div class="ml-3">
-                        <h5 class="text-success about-text text-uppercase mt-4">About Us</h5>
-                        <h2 class="text-uppercase about-h mt-4">Best Water Services With Affordable Prices</h2>
-                        <p class="about-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam perferendis
-                            possimus quia repudiandae sit! Beatae deleniti enim amet neque.</p>
-                        <div class="about-icons ml-0">
-                            <div class="row">
-                                <div class="col-lg-5 col-sm-6 ms-0 mr-0 about-position">
-                                    <ul style={{paddingLeft: "0px"}}  class="header-links float-left mt-3">
-                                        <li><a href="#"><img src={call} class="img-fluid" alt="" />
-                                                <p class="ml-3 about-icon-text">Call Us Now <span
-                                                        class="i-color font-weight-bold">(208)555-0112</span></p>
-                                            </a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-lg-7 col-sm-6 about-position">
-                                    <ul style={{paddingLeft: "0px"}} class="header-links float-left mt-3">
-                                        <li><a href="#"><img src={location} class="img-fluid" alt="" />
-                                                <p class="ml-3 about-icon-text">2416 Mapleview Drive <span
-                                                        class="i-color font-weight-bold">Tampa, FL 33634</span></p>
-                                            </a></li>
-                                    </ul>
-                                </div>
-                                <div class="custom-btn mt-2">
-                                    <a href="" class="btn btn-success custom-padding ml-4 mr-2 mt-5">Know Us More</a>
+            <section className="py-3">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-6 col-sm-6">
+                            <div className="about-section">
+                                <img src={aboutImag} className="card-img-top img-fluid" alt="" />
+                                <div className="img-box5">
+                                    <h2 className="text-white font-weight-bold text-left mt-4 experience">10+ Years <br />Working
+                                        Experience</h2>
                                 </div>
                             </div>
                         </div>
+                        <div className="col-md-6 col-sm-6">
+                            <div className="ml-3">
+                                <h5 className="text-success about-text text-uppercase mt-4 text-left">About Us</h5>
+                                <h2 className="text-uppercase mt-4 text-left ">Best Water Services With Affordable Prices</h2>
+                                <p className="about-p text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam perferendis
+                                    possimus quia repudiandae sit! Beatae deleniti enim amet neque.</p>
+                                <div className="about-icons ml-0">
+                                    <div className="row ">
+                                        <div className="col-lg-5 col-12 ms-0 mr-0 about-position">
+                                            <ul style={{ paddingLeft: "0px" }} className="header-links float-left mt-3">
+                                                <li><a href="#"><img src={call} className="img-fluid" alt="" />
+                                                    <p className="ml-3 about-icon-text text-left2 text-left">Call Us Now <br /><span
+                                                        className="i-color font-weight-bold"> (208)555-0112</span></p>
+                                                </a></li>
+                                            </ul>
+                                        </div>
+                                        <div className="col-lg-7 col-12 about-position">
+                                            <ul style={{ paddingLeft: "0px" }} className="header-links float-left mt-3">
+                                                <li><a href="#"><img src={location} className="img-fluid" alt="" />
+                                                    <p className="ml-3 about-icon-text text-left2 text-left">2416 Mapleview Drive <span
+                                                        className="i-color font-weight-bold">Tampa, FL 33634</span></p>
+                                                </a></li>
+                                            </ul>
+                                        </div>
+                                        <div className="custom-btn mt-2 w-sm-75">
+                                            <a href="" className="btn btn-success custom-padding ml-md-4 mr-2 mt-5">Know Us More</a>
+                                        </div>
+                                    </div>
+                                </div>
 
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-            
+            </section>
+
         </div>
     );
 };

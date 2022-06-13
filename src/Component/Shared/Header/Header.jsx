@@ -9,36 +9,36 @@ import search from "../../../img/search.png"
 const Header = () => {
     return (
         <div>
-            {/* <nav class="navbar navbar-expand-md bg-color navbar-dark">
-                <div class="container">
-                    <a href="" class="navbar-brand h1"></a>
-                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myMenu">
-                        <span class="navbar-toggler-icon"></span>
+            {/* <nav className="navbar navbar-expand-md bg-color navbar-dark">
+                <div className="container">
+                    <a href="" className="navbar-brand h1"></a>
+                    <button type="button" className="navbar-toggler" data-toggle="collapse" data-target="#myMenu">
+                        <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="myMenu">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item nav-mr"><a href="" class="nav-link text-white text-uppercase">Home</a></li>
-                            <li class="nav-item nav-mr"><a href="" class="nav-link text-white text-uppercase">About Us</a></li>
-                            <li class="nav-item nav-mr dropdown">
-                                <a href="" class="nav-link text-white text-uppercase dropdown-toggle" data-toggle="dropdown">Product</a>
-                                <ul class="dropdown-menu bg-light text-dark">
-                                    <li><a href="" class="dropdown-item">Product One</a></li>
-                                    <li><a href="" class="dropdown-item">Product Two</a></li>
-                                    <li><a href="" class="dropdown-item">Product Three</a></li>
+                    <div className="collapse navbar-collapse" id="myMenu">
+                        <ul className="navbar-nav mr-auto">
+                            <li className="nav-item nav-mr"><a href="" className="nav-link text-white text-uppercase">Home</a></li>
+                            <li className="nav-item nav-mr"><a href="" className="nav-link text-white text-uppercase">About Us</a></li>
+                            <li className="nav-item nav-mr dropdown">
+                                <a href="" className="nav-link text-white text-uppercase dropdown-toggle" data-toggle="dropdown">Product</a>
+                                <ul className="dropdown-menu bg-light text-dark">
+                                    <li><a href="" className="dropdown-item">Product One</a></li>
+                                    <li><a href="" className="dropdown-item">Product Two</a></li>
+                                    <li><a href="" className="dropdown-item">Product Three</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item nav-mr dropdown">
-                                <a href="" class="nav-link text-white text-uppercase dropdown-toggle" data-toggle="dropdown">Service</a>
-                                <ul class="dropdown-menu bg-light text-dark">
-                                    <li><a href="" class="dropdown-item">Design, Fabrication & Maintenance</a></li>
-                                    <li><a href="" class="dropdown-item">Environmental Assessment & Documentation</a></li>
-                                    <li><a href="" class="dropdown-item">Chemicals & Machineries</a></li>
+                            <li className="nav-item nav-mr dropdown">
+                                <a href="" className="nav-link text-white text-uppercase dropdown-toggle" data-toggle="dropdown">Service</a>
+                                <ul className="dropdown-menu bg-light text-dark">
+                                    <li><a href="" className="dropdown-item">Design, Fabrication & Maintenance</a></li>
+                                    <li><a href="" className="dropdown-item">Environmental Assessment & Documentation</a></li>
+                                    <li><a href="" className="dropdown-item">Chemicals & Machineries</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item nav-mr"><a href="" class="nav-link text-white text-uppercase">Newsspeed</a></li>
-                            <li class="nav-item nav-mr"><a href="" class="nav-link text-white text-uppercase">Event</a></li>
-                            <li class="nav-item nav-mr"><a href="" class="nav-link text-white text-uppercase">Gallery</a></li>
-                            <li class="nav-item nav-mr"><a href="" class="nav-link text-white text-uppercase">Contact Us</a>
+                            <li className="nav-item nav-mr"><a href="" className="nav-link text-white text-uppercase">Newsspeed</a></li>
+                            <li className="nav-item nav-mr"><a href="" className="nav-link text-white text-uppercase">Event</a></li>
+                            <li className="nav-item nav-mr"><a href="" className="nav-link text-white text-uppercase">Gallery</a></li>
+                            <li className="nav-item nav-mr"><a href="" className="nav-link text-white text-uppercase">Contact Us</a>
                             </li>
                         </ul>
                     </div>
@@ -52,10 +52,10 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto route-item-main">
-                            <Nav.Link ><Link className='route-item' to="/Home">Home</Link></Nav.Link>
+                            <Nav.Link ><Link className='route-item' to="/home">Home</Link></Nav.Link>
                             <Nav.Link> <Link className='route-item' to="about-us">About Us</Link></Nav.Link>
                             <NavDropdown className='route-item text-white' title="Product" id="collasible-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+                                <Nav.Link className='drop-item-main'><Link className='drop-item' to="/product">Product</Link> </Nav.Link>
                                 <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
                                 <NavDropdown.Divider />

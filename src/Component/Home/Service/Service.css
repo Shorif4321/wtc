@@ -40,6 +40,12 @@
     padding: 16px 32px;
     border: 1px solid #00A652;
 }
+.home-service button:hover {
+    background-color: #00a65300;
+    color: #403F3F;
+    transition: 0.3s ease-in
+
+}
 
 
 
@@ -61,16 +67,6 @@
     font-family: 'Inter', sans-serif;
     font-weight: 700;
 }
-
-/* .service-btn, .custom-padding{
-    font-size: 16px;
-    line-height: 28px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    padding: 16px 32px;
-    border-radius: 0px;
-    background-color: #00A652;
-} */
 .bg-none {
     background-color: #ffffff;
     border: none;
@@ -91,14 +87,6 @@
     transition: 0.6s;
 }
 
-.img-box {
-    background: rgba(25, 64, 121, 0.8);
-    width: 446px;
-    height: 150px;
-    position: absolute;
-    left: 22%;
-    top: 69%;
-}
 
 .img-box-2 {
     background: rgba(25, 64, 121, 0.8);
@@ -128,9 +116,14 @@
     float: right;
     margin-left: 15px;
 } */
+.home-service-btn{
+    display: none;
+}
 
 @media only screen and (max-width: 667px) {
-  
+  .home-service2{
+    display: none;
+  }
     .home-service h2 {
         font-size: 25px;
         line-height: 120%;
@@ -149,9 +142,18 @@
     .home-service button {
         padding: 12px 15px;
     }
+    .home-service2{
+        display: none;
+      }
+    .home-service-btn{
+        display: block;
+    }
+    
 
 }
 
 @media only screen and (max-width:991px) and (min-width:668px) {}
 
-@media only screen and (max-width: 1200px) and (min-width:992px) {}
+@media only screen and (max-width: 1200px) and (min-width:992px) {
+   
+}

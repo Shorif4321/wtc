@@ -66,7 +66,12 @@
     color: #FFFFFF;
     background-color: #00A652;
     border: 1px solid #00A652;
-    padding: 8px 16px;
+    padding: 17px 40px;
+}
+.newsFeed button:hover{
+    background-color: #00a65302;
+    color: black;
+    transition: 0.3s ease-in
 }
 
 .search {

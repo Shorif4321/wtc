@@ -72,13 +72,13 @@ const NewsFeed = () => {
                             </form>
                         </div> */}
                        <div className='text-left'>
-                       <h3>CATEGORIES</h3>
+                      {/*  <h3>CATEGORIES</h3>
                         <p><img className='mr-3' src={okay} alt="" />Articles</p>
                         <p><img className='mr-3' src={okay} alt="" />Events
                         </p>
                         <p><img className='mr-3' src={okay} alt="" />General</p>
                         <p><img className='mr-3' src={okay} alt="" />News</p>
-                        <p><img className='mr-3' src={okay} alt="" />Post</p>
+                        <p><img className='mr-3' src={okay} alt="" />Post</p> */}
                        </div>
                        <div className='text-left'>
                        <h3>RECENT POSTS</h3>

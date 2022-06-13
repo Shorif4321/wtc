@@ -15,9 +15,9 @@ const HeadTop = () => {
                         <div className="col-md-12">
                             <div className="border-br">
                                 <div className="row">
-                                    <div class="col-lg-6 col-sm-8 text-left">
+                                    <div className="col-lg-6 col-sm-8 text-left">
                                         <img src={Frame} alt="" />
-                                        <div class="image-text">
+                                        <div className="image-text">
                                             <p>Its Friday, 3:00pm & We are Open Till 6:00pm</p>
                                         </div>
                                     </div>
@@ -36,38 +36,38 @@ const HeadTop = () => {
                 </div>
             </section>
 
-            <section class="mb-4 header-section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-2 col-sm-2">
-                            {/* <!--            <div class="col-md-2 col-sm-6 d-sm-none">--> */}
-                            <div class="img-fluid">
+            <section className="mb-4 header-section">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-2 col-sm-2">
+                            {/* <!--            <div className="col-md-2 col-sm-6 d-sm-none">--> */}
+                            <div className="img-fluid">
                                 <img src={img11} alt="" />
                             </div>
                         </div>
-                        <div class="col-lg-10 col-sm-10">
-                            {/*  <!--            <div class="col-md-10 col-sm-6 d-sm-none">--> */}
-                            <div class="row">
-                                <div class="col-lg-4 col-sm-4 ">
-                                    <ul class="header-links float-left mt-3 p-0">
-                                        <li><a href="#"><img src={call} class="img-fluid d-inline" alt="" />
-                                            <p class="ml-4">Call Us Now <span class="i-color">(208)555-0112</span></p>
+                        <div className="col-lg-10 col-sm-10">
+                            {/*  <!--            <div className="col-md-10 col-sm-6 d-sm-none">--> */}
+                            <div className="row">
+                                <div className="col-lg-4 col-sm-4 ">
+                                    <ul className="header-links float-left mt-3 p-0">
+                                        <li><a href="#"><img src={call} className="img-fluid d-inline" alt="" />
+                                            <p className="ml-4">Call Us Now <span className="i-color">(208)555-0112</span></p>
                                         </a></li>
                                     </ul>
                                 </div>
-                                <div class="col-lg-4 col-sm-4">
-                                    <ul class="header-links float-left mt-3 p-0">
-                                        <li><a href="#"><img src={location} class="img-fluid d-inline"
+                                <div className="col-lg-4 col-sm-4">
+                                    <ul className="header-links float-left mt-3 p-0">
+                                        <li><a href="#"><img src={location} className="img-fluid d-inline"
                                             style={{ marginRight: "20px" }} alt="" />
-                                            <p class="ml-4">2416 Mapleview Drive<span class="i-color">Tampa, FL 33634</span>
+                                            <p className="ml-4">2416 Mapleview Drive<span className="i-color">Tampa, FL 33634</span>
                                             </p>
                                         </a></li>
                                     </ul>
                                 </div>
-                                <div class="col-lg-4 col-sm-4">
-                                    <ul class="header-links float-left mt-3 p-0">
-                                        <li><a href="#"><img src={calendar} class="img-fluid d-inline" alt="" />
-                                            <p class="ml-4">Mon - Satday <span class="i-color">9.00am to 18.00pm</span></p>
+                                <div className="col-lg-4 col-sm-4">
+                                    <ul className="header-links float-left mt-3 p-0">
+                                        <li><a href="#"><img src={calendar} className="img-fluid d-inline" alt="" />
+                                            <p className="ml-4">Mon - Satday <span className="i-color">9.00am to 18.00pm</span></p>
                                         </a></li>
                                     </ul>
                                 </div>

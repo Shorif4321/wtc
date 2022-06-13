@@ -105,9 +105,15 @@
     text-transform: capitalize;
     color: #FFFFFF;
     background: #00A652;
-    padding: 16px 24px;
+    padding: 20px 38px;
     margin: 34px 0;
     border: 1px solid #00A652;
+}
+.form-button:hover{
+    background-color: #00a65300;
+    color: #403F3F;
+    transition: 0.3s ease-in
+
 }
 
 @media only screen and (max-width: 667px) {

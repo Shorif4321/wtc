@@ -30,6 +30,29 @@
 .navbar-dark .navbar-nav .nav-link {
     color: #fff;
 }
+
+
+.dropdown-item:focus, .dropdown-item:hover {
+    background-color: #194079;
+    color: #fbfbfb;
+}
+.dropdown-divider {
+    border-top: 1px solid rgb(229 194 194);
+}
+.drop-item-main:hover{
+    background-color: #194079;
+
+}
+.drop-item{
+    text-decoration: none;
+    color: #4c4736;
+    padding: 0 0px 0px 16px;
+}
+.drop-item:hover{
+    color: #fbfbfb;
+    text-decoration: none;
+}
+
 /* 
 .navbar-expand-md .navbar-nav .nav-link {
     font-family: 'Inter', sans-serif;

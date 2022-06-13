@@ -1,0 +1,250 @@
+.carousel-control-prev-icon {
+    display: none;
+}
+
+.slider-text {
+    text-align: left;
+    margin-right: auto;
+}
+
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    transition: opacity .6s ease;
+}
+
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 1%;
+}
+
+.carousel-caption {
+    left: 4%;
+    right: 1%;
+    bottom: 9rem;
+
+}
+
+.slider-text h3 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 125%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.slider-text p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+    padding: 16px 0 40px 0;
+}
+
+.button-1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF;
+    padding: 16px 26px;
+    background-color: #00A652;
+    border: 1px solid #00A652;
+    margin-right: 24px;
+}
+
+.button-2 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 16px 26px;
+    color: #00A652;
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+}
+.button-1:hover{
+    background-color: rgba(0, 0, 0, 0);
+    color:#00A652;
+    transition: 0.3s ease-in
+}
+.button-2:hover{
+    background-color: rgba(0, 0, 0, 0);
+    color:#00A652;
+    transition: 0.3s ease-in
+}
+
+@media only screen and (max-width: 667px) {
+.slider-image{
+    height: 70vh;
+    object-fit: cover;
+}
+.slider-text {
+    text-align: left;
+    margin-right: auto;
+    align-items: center;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 13px;
+    height: 13px;
+    border-radius: 100%;
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+.carousel-indicators:active {}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 1%;
+}
+
+.carousel-caption {
+    left: 1%;
+    right: 1%;
+    bottom: 3rem;
+
+}
+.slider-text{
+    text-align: center;
+    padding: 500px 0px 0 0 ;
+}
+.slider-text h3 {
+    font-size: 25px;
+    line-height: 125%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.slider-text p {
+    text-align: center;
+    font-size: 17px;
+    line-height: 26px;
+    padding: 10px 10px;
+}
+.button-cus{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+    
+}
+.button-1 {
+    padding: 12px 20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.button-2 {
+    padding: 12px 20px;
+}
+
+}
+@media only screen and (max-width:991px) and (min-width:668px){
+    .slider-text {
+        text-align: center;
+        margin-right: auto;
+    }
+    
+    .carousel-indicators [data-bs-target] {
+        width: 13px;
+        height: 13px;
+        border-radius: 100%;
+        padding: 0;
+        margin-right: 3px;
+        margin-left: 3px;
+    }
+    
+    .carousel-indicators:active {}
+    
+    .carousel-control-next,
+    .carousel-control-prev {
+        width: 1%;
+    }
+    
+    .carousel-caption {
+        left: 5%;
+        right: 1%;
+        bottom: 2rem;
+    
+    }
+    
+    .slider-text h3 {
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 125%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    
+    .slider-text p {
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        color: #FFFFFF;
+        padding: 16px 0 40px 0;
+    }
+    
+    .button-1 {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 28px;
+        color: #FFFFFF;
+        padding: 16px 26px;
+        background-color: #00A652;
+        border: 1px solid #00A652;
+        margin-right: 24px;
+    }
+    
+    .button-2 {
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 28px;
+        padding: 16px 26px;
+        color: #00A652;
+        background-color: #FFFFFF;
+        border: 1px solid #FFFFFF;
+    }
+}
+@media only screen and (max-width: 1200px) and (min-width:992px) {
+    .slider-text h3 {
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 125%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+}
