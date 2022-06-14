@@ -5,6 +5,9 @@ import img11 from "../../../img/11.png"
 import call from "../../../img/call icons.svg"
 import calendar from "../../../img/calendar icons.svg"
 import location from "../../../img/location icons.svg"
+import facebook from "../../../img/facebook.svg"
+import linkdine from "../../../img/Linkedin.png"
+import twitteer from "../../../img/Twitter.svg"
 
 const HeadTop = () => {
     return (
@@ -23,10 +26,11 @@ const HeadTop = () => {
                                     </div>
 
                                     <div className="col-lg-6 col-sm-4 float-right">
-                                        <div className="social-links float-right">
-                                            <a href="#" target="_blank"><i className="tot-social fab fa-facebook-f"></i></a>
-                                            <a href="#" target="_blank"><i className="fab fa-twitter"></i></a>
-                                            <a href="#" target="_blank"><i className="fab fa-linkedin-in"></i></a>
+                                        <div className=" float-right">
+
+                                            <a href="#" target="_blank"><embed src={facebook} alt="" /></a>
+                                            <a href="#" target="_blank"><embed className='mx-2' src={twitteer} alt="" /></a>
+                                            <a href="#" target="_blank"><embed src={linkdine} alt="" /></a>
                                         </div>
                                     </div>
                                 </div>
@@ -38,10 +42,10 @@ const HeadTop = () => {
 
             <section className="mb-4 header-section">
                 <div className="container">
-                    <div className="row">
-                        <div className="col-lg-2 col-sm-2">
+                    <div className="row align-items-center">
+                        <div className="col-lg-2 col-sm-2 text-align-left">
                             {/* <!--            <div className="col-md-2 col-sm-6 d-sm-none">--> */}
-                            <div className="img-fluid">
+                            <div className="img-fluid ">
                                 <img src={img11} alt="" />
                             </div>
                         </div>
@@ -51,11 +55,11 @@ const HeadTop = () => {
                                 <div className="col-lg-4 col-sm-4 ">
                                     <ul className="header-links float-left mt-3 p-0">
                                         <li><a href="#"><img src={call} className="img-fluid d-inline" alt="" />
-                                            <p className="ml-4">Call Us Now <span className="i-color">(208)555-0112</span></p>
+                                            <p className="ml-4">Call Us Now <br /> <span className="i-color">(208)555-0112</span></p>
                                         </a></li>
                                     </ul>
                                 </div>
-                                <div className="col-lg-4 col-sm-4">
+                                <div className="col-lg-4 col-sm-4 ">
                                     <ul className="header-links float-left mt-3 p-0">
                                         <li><a href="#"><img src={location} className="img-fluid d-inline"
                                             style={{ marginRight: "20px" }} alt="" />
@@ -64,9 +68,9 @@ const HeadTop = () => {
                                         </a></li>
                                     </ul>
                                 </div>
-                                <div className="col-lg-4 col-sm-4">
-                                    <ul className="header-links float-left mt-3 p-0">
-                                        <li><a href="#"><img src={calendar} className="img-fluid d-inline" alt="" />
+                                <div className="col-lg-4 col-sm-4 text-right">
+                                    <ul className="header-links float-left mt-3 p-0 ">
+                                        <li><a href="#"><img src={calendar} className="img-fluid d-inline ms-5" alt="" />
                                             <p className="ml-4">Mon - Satday <span className="i-color">9.00am to 18.00pm</span></p>
                                         </a></li>
                                     </ul>

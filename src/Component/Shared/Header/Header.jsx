@@ -51,27 +51,29 @@ const Header = () => {
                     <Navbar.Brand href="#home"><img className='logo img-fluid' src={logo} alt="" /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
-                        <Nav className="me-auto route-item-main">
-                            <Nav.Link ><Link className='route-item' to="/home">Home</Link></Nav.Link>
-                            <Nav.Link> <Link className='route-item' to="about-us">About Us</Link></Nav.Link>
-                            <NavDropdown className='route-item text-white' title="Product" id="collasible-nav-dropdown">
+                        <Nav className="m-auto route-item-main">
+                            <Nav.Link className=''><Link className='route-item' to="/home">Home</Link></Nav.Link>
+                            <Nav.Link className='myBorder'> <Link className='route-item' to="about-us">About Us</Link></Nav.Link>
+
+                            <NavDropdown className='myBorder route-item text-white' title="Product" id="collasible-nav-dropdown">
                                 <Nav.Link className='drop-item-main'><Link className='drop-item' to="/product">Product</Link> </Nav.Link>
                                 <Nav.Link className='drop-item-main'><Link className='drop-item' to="/product">Product</Link> </Nav.Link>
                                 <Nav.Link className='drop-item-main'><Link className='drop-item' to="/product">Product</Link> </Nav.Link>
                                 <NavDropdown.Divider />
                                 <Nav.Link className='drop-item-main'><Link className='drop-item' to="/product">Product</Link> </Nav.Link>
                             </NavDropdown>
-                            <NavDropdown className='route-item text-white' title="Service" id="collasible-nav-dropdown">
+
+                            <NavDropdown className='myBorder route-item text-white ' title="Service" id="collasible-nav-dropdown">
                                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
                                 <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
                             </NavDropdown>
-                            <Nav.Link> <Link className='route-item' to="news-feed">newsfeed</Link> </Nav.Link>
-                            <Nav.Link> <Link className='route-item' to="event">event</Link>  </Nav.Link>
-                            <Nav.Link> <Link className='route-item' to="gallery">gallery</Link> </Nav.Link>
-                            <Nav.Link> <Link className='route-item' to="contact-us">contact us</Link>  </Nav.Link>
+                            <Nav.Link className='myBorder'> <Link className=' route-item' to="news-feed">newsfeed</Link> </Nav.Link>
+                            <Nav.Link className='myBorder'> <Link className=' route-item' to="event">event</Link>  </Nav.Link>
+                            <Nav.Link className='myBorder'> <Link className=' route-item' to="gallery">gallery</Link> </Nav.Link>
+                            <Nav.Link className='myBorder'> <Link className=' route-item ' to="contact-us ">contact us</Link>  </Nav.Link>
                         </Nav>
                         
                        {/*  <Nav>
