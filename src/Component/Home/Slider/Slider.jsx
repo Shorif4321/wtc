@@ -16,14 +16,13 @@ const Slider = () => {
                     />
                     <Carousel.Caption>
                         <div className='slider-text col-12 col-md-12 col-lg-6'>
-                            <h3 className=''>Sustainable Saving Solutions</h3>
+                            <h3 className=''>Sustainable Saving </h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa maecenas non in cursus amet fusce feugiat ut. Eu dignissim tellus fermentum eget dolor.</p>
                             <div className='button-cus'>
                                 <button className='button-1'>MORE ABOUT US</button>
                                 <button className='button-2'>OUR SERVICES</button>
                             </div>
                         </div>
-
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>

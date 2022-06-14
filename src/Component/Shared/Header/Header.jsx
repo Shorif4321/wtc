@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Container, Nav, NavDropdown,Tabs, Tab} from 'react-bootstrap';
+import { Navbar, Container, Nav, NavDropdown, Tabs, Tab, Form, Button } from 'react-bootstrap';
 import { Link, NavLink } from 'react-router-dom';
 import HeadTop from '../HeadTop/HeadTop';
 import "./Header.css"
@@ -56,10 +56,10 @@ const Header = () => {
                             <Nav.Link> <Link className='route-item' to="about-us">About Us</Link></Nav.Link>
                             <NavDropdown className='route-item text-white' title="Product" id="collasible-nav-dropdown">
                                 <Nav.Link className='drop-item-main'><Link className='drop-item' to="/product">Product</Link> </Nav.Link>
-                                <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+                                <Nav.Link className='drop-item-main'><Link className='drop-item' to="/product">Product</Link> </Nav.Link>
+                                <Nav.Link className='drop-item-main'><Link className='drop-item' to="/product">Product</Link> </Nav.Link>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                                <Nav.Link className='drop-item-main'><Link className='drop-item' to="/product">Product</Link> </Nav.Link>
                             </NavDropdown>
                             <NavDropdown className='route-item text-white' title="Service" id="collasible-nav-dropdown">
                                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
@@ -73,9 +73,19 @@ const Header = () => {
                             <Nav.Link> <Link className='route-item' to="gallery">gallery</Link> </Nav.Link>
                             <Nav.Link> <Link className='route-item' to="contact-us">contact us</Link>  </Nav.Link>
                         </Nav>
-                        <Nav>
-                            
-                        </Nav>
+                        
+                       {/*  <Nav>
+                            <Form className="d-flex">
+                                <Form.Control
+                                    type="search"
+                                    placeholder="Search"
+                                    className="me-2"
+                                    aria-label="Search"
+                                />
+                                <Button variant="outline-success">Search</Button> 
+                            </Form>
+                        </Nav> */}
+
                     </Navbar.Collapse>
                 </Container>
             </Navbar>

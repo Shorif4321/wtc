@@ -117,7 +117,15 @@
     transition: 0.3s ease-in
     
 }
-@media only screen and (max-width: 667px) {    
+@media only screen and (max-width: 667px) {   
+    .img-box-2{
+        background: rgba(25,64,121,0.8);
+        width: 320px;
+        height: 56px;
+        position: absolute;
+        left: 0;
+        top: 81%;
+    }
 .product-hero h1 {
     font-weight: 600;
     font-size: 25px;
@@ -129,6 +137,9 @@
 }
 
 }
+
+
+
 @media only screen and (max-width:991px) and (min-width:668px){
     .product-hero h1 {
         font-weight: 600;

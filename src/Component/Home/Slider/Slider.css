@@ -247,4 +247,10 @@
         text-transform: uppercase;
         color: #FFFFFF;
     }
+    .carousel-caption {
+        left: 5%;
+        right: 1%;
+        bottom: 1rem;
+    
+    }
 }

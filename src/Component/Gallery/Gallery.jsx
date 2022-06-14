@@ -31,44 +31,44 @@ const Gallery = () => {
             <section>
                 <div className='container'>
                     <div class="row text-md-center text-left">
-                        <div class="col-md-3 col-sm-6 mb-4 ">
+                        <div class="col-md-6 col-lg-3 col-sm-6 mb-4 ">
                             <div class="card">
                                 <img src={galleryImage} class="card-img-top img-fluid" alt="" />
 
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6 mb-4 ">
+                        <div class="col-md-6 col-lg-3 col-sm-6 mb-4 ">
                             <div class="card">
                                 <img src={galleryImage} class="card-img-top img-fluid" alt="" />
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6 mb-4 ">
+                        <div class="col-md-6 col-lg-3 col-sm-6 mb-4 ">
                             <div class="card">
                                 <img src={galleryImage} class="card-img-top img-fluid" alt="" />
 
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="col-md-6 col-lg-3  col-sm-6 mb-4">
                             <div class="card">
                                 <img src={galleryImage} class="card-img-top img-fluid" alt="" />
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="col-md-6 col-lg-3  col-sm-6 mb-4">
                             <div class="card">
                                 <img src={galleryImage} class="card-img-top img-fluid" alt="" />
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="col-md-6 col-lg-3  col-sm-6 mb-4">
                             <div class="card">
                                 <img src={galleryImage} class="card-img-top img-fluid" alt="" />
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="col-md-6 col-lg-3  col-sm-6 mb-4">
                             <div class="card">
                                 <img src={galleryImage} class="card-img-top img-fluid" alt="" />
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="col-md-6 col-lg-3  col-sm-6 mb-4">
                             <div class="card">
                                 <img src={galleryImage} class="card-img-top img-fluid" alt="" />
                             </div>
@@ -92,44 +92,44 @@ const Gallery = () => {
             <section>
                 <div className='container mb-4'>
                     <div class="row text-md-center text-left">
-                        <div class="col-md-3 col-sm-6 mb-4 ">
+                        <div class="col-md-6 col-lg-3  col-sm-6 mb-4 ">
                             <div class="card">
                                 <img src={repair} class="card-img-top img-fluid" alt="" />
 
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6 mb-4 ">
+                        <div class="col-md-6 col-lg-3  col-sm-6 mb-4 ">
                             <div class="card">
                                 <img src={galleryImage} class="card-img-top img-fluid" alt="" />
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6 mb-4 ">
+                        <div class="col-md-6 col-lg-3  col-sm-6 mb-4 ">
                             <div class="card">
                                 <img src={repair} class="card-img-top img-fluid" alt="" />
 
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="col-md-6 col-lg-3  col-sm-6 mb-4">
                             <div class="card">
                                 <img src={repair} class="card-img-top img-fluid" alt="" />
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="col-md-6 col-lg-3  col-sm-6 mb-4">
                             <div class="card">
                                 <img src={repair} class="card-img-top img-fluid" alt="" />
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="col-md-6 col-lg-3  col-sm-6 mb-4">
                             <div class="card">
                                 <img src={repair} class="card-img-top img-fluid" alt="" />
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="col-md-6 col-lg-3  col-sm-6 mb-4">
                             <div class="card">
                                 <img src={repair} class="card-img-top img-fluid" alt="" />
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="col-md-6 col-lg-3  col-sm-6 mb-4">
                             <div class="card">
                                 <img src={repair} class="card-img-top img-fluid" alt="" />
                             </div>
@@ -152,24 +152,24 @@ const Gallery = () => {
             <section>
                 <div className='container mb-4'>
                     <div class="row text-md-center text-left">
-                        <div class="col-md-3 col-sm-6 mb-4 ">
+                        <div class="col-md-6 col-lg-3  col-sm-6 mb-4 ">
                             <div class="card">
                                 <img src={galleryLast} class="card-img-top img-fluid" alt="" />
 
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6 mb-4 ">
+                        <div class="col-md-6 col-lg-3  col-sm-6 mb-4 ">
                             <div class="card">
                                 <img src={repair} class="card-img-top img-fluid" alt="" />
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6 mb-4 ">
+                        <div class="col-md-6 col-lg-3  col-sm-6 mb-4 ">
                             <div class="card">
                                 <img src={galleryLast} class="card-img-top img-fluid" alt="" />
 
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6 mb-4">
+                        <div class="col-md-6 col-lg-3  col-sm-6 mb-4">
                             <div class="card">
                                 <img src={galleryImage} class="card-img-top img-fluid" alt="" />
                             </div>
