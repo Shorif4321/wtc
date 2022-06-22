@@ -1,4 +1,4 @@
-import React from 'react';
+ import React from 'react';
 import "./HeadTop.css"
 import Frame from "../../../img/Frame.png"
 import img11 from "../../../img/11.png"
@@ -45,7 +45,7 @@ const HeadTop = () => {
                     <div className="row align-items-center">
                         <div className="col-lg-2 col-sm-2 text-align-left">
                             {/* <!--            <div className="col-md-2 col-sm-6 d-sm-none">--> */}
-                            <div className="img-fluid ">
+                            <div className="img-fluid text-left">
                                 <img src={img11} alt="" />
                             </div>
                         </div>

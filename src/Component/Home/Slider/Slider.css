@@ -34,9 +34,9 @@
 }
 
 .carousel-caption {
-    left: 4%;
+    left: 23%;
     right: 1%;
-    bottom: 9rem;
+    bottom: 20rem;
 
 }
 
@@ -84,91 +84,31 @@
     background-color: #FFFFFF;
     border: 1px solid #FFFFFF;
 }
-.button-1:hover{
+
+.button-1:hover {
     background-color: rgba(0, 0, 0, 0);
-    color:#00A652;
+    color: #00A652;
     transition: 0.3s ease-in
 }
-.button-2:hover{
+
+.button-2:hover {
     background-color: rgba(0, 0, 0, 0);
-    color:#00A652;
+    color: #00A652;
     transition: 0.3s ease-in
 }
 
 @media only screen and (max-width: 667px) {
-.slider-image{
-    height: 70vh;
-    object-fit: cover;
-}
-.slider-text {
-    text-align: left;
-    margin-right: auto;
-    align-items: center;
-}
-
-.carousel-indicators [data-bs-target] {
-    width: 13px;
-    height: 13px;
-    border-radius: 100%;
-    padding: 0;
-    margin-right: 3px;
-    margin-left: 3px;
-}
-
-.carousel-indicators:active {}
-
-.carousel-control-next,
-.carousel-control-prev {
-    width: 1%;
-}
-
-.carousel-caption {
-    left: 1%;
-    right: 1%;
-    bottom: 3rem;
-
-}
-.slider-text{
-    text-align: center;
-    padding: 500px 0px 0 0 ;
-}
-.slider-text h3 {
-    font-size: 25px;
-    line-height: 125%;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.slider-text p {
-    text-align: center;
-    font-size: 17px;
-    line-height: 26px;
-    padding: 10px 10px;
-}
-.button-cus{
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    margin: auto;
-    
-}
-.button-1 {
-    padding: 12px 20px;
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.button-2 {
-    padding: 12px 20px;
-}
-
-}
-@media only screen and (max-width:991px) and (min-width:668px){
-    .slider-text {
-        text-align: center;
-        margin-right: auto;
+    .slider-image {
+        height: 70vh;
+        object-fit: cover;
     }
-    
+
+    .slider-text {
+        text-align: left;
+        margin-right: auto;
+        align-items: center;
+    }
+
     .carousel-indicators [data-bs-target] {
         width: 13px;
         height: 13px;
@@ -177,21 +117,89 @@
         margin-right: 3px;
         margin-left: 3px;
     }
-    
+
     .carousel-indicators:active {}
-    
+
     .carousel-control-next,
     .carousel-control-prev {
         width: 1%;
     }
-    
+
+    .carousel-caption {
+        left: 1%;
+        right: 1%;
+        bottom: 8rem;
+
+    }
+
+    .slider-text {
+        text-align: center;
+        padding: 500px 0px 0 0;
+    }
+
+    .slider-text h3 {
+        font-size: 25px;
+        line-height: 125%;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .slider-text p {
+        text-align: center;
+        font-size: 17px;
+        line-height: 26px;
+        padding: 10px 10px;
+    }
+
+    .button-cus {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        margin: auto;
+
+    }
+
+    .button-1 {
+        padding: 12px 20px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .button-2 {
+        padding: 12px 20px;
+    }
+
+}
+
+@media only screen and (max-width:991px) and (min-width:668px) {
+    .slider-text {
+        text-align: center;
+        margin-right: auto;
+    }
+
+    .carousel-indicators [data-bs-target] {
+        width: 13px;
+        height: 13px;
+        border-radius: 100%;
+        padding: 0;
+        margin-right: 3px;
+        margin-left: 3px;
+    }
+
+    .carousel-indicators:active {}
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        width: 1%;
+    }
+
     .carousel-caption {
         left: 5%;
         right: 1%;
         bottom: 2rem;
-    
+
     }
-    
+
     .slider-text h3 {
         font-family: 'Inter', sans-serif;
         font-style: normal;
@@ -201,7 +209,7 @@
         text-transform: uppercase;
         color: #FFFFFF;
     }
-    
+
     .slider-text p {
         font-family: 'Inter', sans-serif;
         font-style: normal;
@@ -211,7 +219,7 @@
         color: #FFFFFF;
         padding: 16px 0 40px 0;
     }
-    
+
     .button-1 {
         font-family: 'Inter';
         font-style: normal;
@@ -224,7 +232,7 @@
         border: 1px solid #00A652;
         margin-right: 24px;
     }
-    
+
     .button-2 {
         font-family: 'Inter', sans-serif;
         font-style: normal;
@@ -237,6 +245,7 @@
         border: 1px solid #FFFFFF;
     }
 }
+
 @media only screen and (max-width: 1200px) and (min-width:992px) {
     .slider-text h3 {
         font-family: 'Inter', sans-serif;
@@ -247,10 +256,32 @@
         text-transform: uppercase;
         color: #FFFFFF;
     }
+
     .carousel-caption {
-        left: 5%;
-        right: 1%;
-        bottom: 1rem;
-    
+        left: 4%;
+        right: 0%;
+        bottom: 4rem;
+
     }
+}
+
+@media only screen and (max-width: 1440px) and (min-width:1201px) {
+    .carousel-caption {
+        left: 4%;
+        right: 1%;
+        bottom: 8rem;
+    }
+
+
+}
+
+@media only screen and (max-width: 2000px) and (min-width:1441px) {
+    .carousel-caption {
+        bottom: 12rem;
+        left: 11%;
+        right: 1%;
+
+    }
+
+
 }

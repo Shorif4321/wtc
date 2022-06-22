@@ -30,47 +30,47 @@ const Gallery = () => {
             {/* =========== service gallery 1 =========== */}
             <section>
                 <div className='container'>
-                    <div class="row text-md-center text-left">
-                        <div class="col-md-6 col-lg-3 col-sm-6 mb-4 ">
-                            <div class="card">
-                                <img src={galleryImage} class="card-img-top img-fluid" alt="" />
+                    <div className="row text-md-center text-left">
+                        <div className="col-md-6 col-lg-3 col-sm-6 mb-4 ">
+                            <div className="card">
+                                <img src={galleryImage} className="card-img-top img-fluid" alt="" />
 
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-3 col-sm-6 mb-4 ">
-                            <div class="card">
-                                <img src={galleryImage} class="card-img-top img-fluid" alt="" />
+                        <div className="col-md-6 col-lg-3 col-sm-6 mb-4 ">
+                            <div className="card">
+                                <img src={galleryImage} className="card-img-top img-fluid" alt="" />
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-3 col-sm-6 mb-4 ">
-                            <div class="card">
-                                <img src={galleryImage} class="card-img-top img-fluid" alt="" />
+                        <div className="col-md-6 col-lg-3 col-sm-6 mb-4 ">
+                            <div className="card">
+                                <img src={galleryImage} className="card-img-top img-fluid" alt="" />
 
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-3  col-sm-6 mb-4">
-                            <div class="card">
-                                <img src={galleryImage} class="card-img-top img-fluid" alt="" />
+                        <div className="col-md-6 col-lg-3  col-sm-6 mb-4">
+                            <div className="card">
+                                <img src={galleryImage} className="card-img-top img-fluid" alt="" />
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-3  col-sm-6 mb-4">
-                            <div class="card">
-                                <img src={galleryImage} class="card-img-top img-fluid" alt="" />
+                        <div className="col-md-6 col-lg-3  col-sm-6 mb-4">
+                            <div className="card">
+                                <img src={galleryImage} className="card-img-top img-fluid" alt="" />
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-3  col-sm-6 mb-4">
-                            <div class="card">
-                                <img src={galleryImage} class="card-img-top img-fluid" alt="" />
+                        <div className="col-md-6 col-lg-3  col-sm-6 mb-4">
+                            <div className="card">
+                                <img src={galleryImage} className="card-img-top img-fluid" alt="" />
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-3  col-sm-6 mb-4">
-                            <div class="card">
-                                <img src={galleryImage} class="card-img-top img-fluid" alt="" />
+                        <div className="col-md-6 col-lg-3  col-sm-6 mb-4">
+                            <div className="card">
+                                <img src={galleryImage} className="card-img-top img-fluid" alt="" />
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-3  col-sm-6 mb-4">
-                            <div class="card">
-                                <img src={galleryImage} class="card-img-top img-fluid" alt="" />
+                        <div className="col-md-6 col-lg-3  col-sm-6 mb-4">
+                            <div className="card">
+                                <img src={galleryImage} className="card-img-top img-fluid" alt="" />
                             </div>
                         </div>
                     </div>
@@ -91,58 +91,58 @@ const Gallery = () => {
             {/* =========== service gallery 2 =========== */}
             <section>
                 <div className='container mb-4'>
-                    <div class="row text-md-center text-left">
-                        <div class="col-md-6 col-lg-3  col-sm-6 mb-4 ">
-                            <div class="card">
-                                <img src={repair} class="card-img-top img-fluid" alt="" />
+                    <div className="row text-md-center text-left">
+                        <div className="col-md-6 col-lg-3  col-sm-6 mb-4 ">
+                            <div className="card">
+                                <img src={repair} className="card-img-top img-fluid" alt="" />
 
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-3  col-sm-6 mb-4 ">
-                            <div class="card">
-                                <img src={galleryImage} class="card-img-top img-fluid" alt="" />
+                        <div className="col-md-6 col-lg-3  col-sm-6 mb-4 ">
+                            <div className="card">
+                                <img src={galleryImage} className="card-img-top img-fluid" alt="" />
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-3  col-sm-6 mb-4 ">
-                            <div class="card">
-                                <img src={repair} class="card-img-top img-fluid" alt="" />
+                        <div className="col-md-6 col-lg-3  col-sm-6 mb-4 ">
+                            <div className="card">
+                                <img src={repair} className="card-img-top img-fluid" alt="" />
 
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-3  col-sm-6 mb-4">
-                            <div class="card">
-                                <img src={repair} class="card-img-top img-fluid" alt="" />
+                        <div className="col-md-6 col-lg-3  col-sm-6 mb-4">
+                            <div className="card">
+                                <img src={repair} className="card-img-top img-fluid" alt="" />
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-3  col-sm-6 mb-4">
-                            <div class="card">
-                                <img src={repair} class="card-img-top img-fluid" alt="" />
+                        <div className="col-md-6 col-lg-3  col-sm-6 mb-4">
+                            <div className="card">
+                                <img src={repair} className="card-img-top img-fluid" alt="" />
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-3  col-sm-6 mb-4">
-                            <div class="card">
-                                <img src={repair} class="card-img-top img-fluid" alt="" />
+                        <div className="col-md-6 col-lg-3  col-sm-6 mb-4">
+                            <div className="card">
+                                <img src={repair} className="card-img-top img-fluid" alt="" />
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-3  col-sm-6 mb-4">
-                            <div class="card">
-                                <img src={repair} class="card-img-top img-fluid" alt="" />
+                        <div className="col-md-6 col-lg-3  col-sm-6 mb-4">
+                            <div className="card">
+                                <img src={repair} className="card-img-top img-fluid" alt="" />
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-3  col-sm-6 mb-4">
-                            <div class="card">
-                                <img src={repair} class="card-img-top img-fluid" alt="" />
+                        <div className="col-md-6 col-lg-3  col-sm-6 mb-4">
+                            <div className="card">
+                                <img src={repair} className="card-img-top img-fluid" alt="" />
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-             {/* ======= Gallery head 3 ======== */}
-             <section className='container my-md-5 my-sm-2'>
+            {/* ======= Gallery head 3 ======== */}
+            <section className='container my-md-5 my-sm-2'>
                 <div className="gallery-head">
                     <h1>
-                    Technologies
+                        Technologies
                     </h1>
                     <button className=''>
                         ALL GALLERY <img className='arrow-image' src={rightArrow} alt="" />
@@ -151,27 +151,27 @@ const Gallery = () => {
             </section>
             <section>
                 <div className='container mb-4'>
-                    <div class="row text-md-center text-left">
-                        <div class="col-md-6 col-lg-3  col-sm-6 mb-4 ">
-                            <div class="card">
-                                <img src={galleryLast} class="card-img-top img-fluid" alt="" />
+                    <div className="row text-md-center text-left">
+                        <div className="col-md-6 col-lg-3  col-sm-6 mb-4 ">
+                            <div className="card">
+                                <img src={galleryLast} className="card-img-top img-fluid" alt="" />
 
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-3  col-sm-6 mb-4 ">
-                            <div class="card">
-                                <img src={repair} class="card-img-top img-fluid" alt="" />
+                        <div className="col-md-6 col-lg-3  col-sm-6 mb-4 ">
+                            <div className="card">
+                                <img src={repair} className="card-img-top img-fluid" alt="" />
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-3  col-sm-6 mb-4 ">
-                            <div class="card">
-                                <img src={galleryLast} class="card-img-top img-fluid" alt="" />
+                        <div className="col-md-6 col-lg-3  col-sm-6 mb-4 ">
+                            <div className="card">
+                                <img src={galleryLast} className="card-img-top img-fluid" alt="" />
 
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-3  col-sm-6 mb-4">
-                            <div class="card">
-                                <img src={galleryImage} class="card-img-top img-fluid" alt="" />
+                        <div className="col-md-6 col-lg-3  col-sm-6 mb-4">
+                            <div className="card">
+                                <img src={galleryImage} className="card-img-top img-fluid" alt="" />
                             </div>
                         </div>
 

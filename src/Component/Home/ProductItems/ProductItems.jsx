@@ -12,11 +12,6 @@ const ProductItems = () => {
                 <div className="container">
                     <div className="title mb-3 featured-project">
                         <div className="owl-nav">
-                            {/* <button className="btn btn-success bbb_viewed_nav bbb_viewed_prev next-btn btn-sm ml-3 mt-3"><i
-                                style={{fontSize: "23px"}} className="fa fa-angle-right"></i></button>
-                              <button className="btn btn-success bbb_viewed_nav bbb_viewed_next next-btn btn-sm mt-3"><i
-                                style={{fontSize: "23px"}} className="fa fa-angle-left"></i></button>
-                            */}
                         </div>
                         <h3 className="text-uppercase custom-service pt-2 ">FEATURED PROJECTS</h3>
                         <h2 className="font-weight-bold text-uppercase custom-service-2 mb-5  ">our products item</h2>

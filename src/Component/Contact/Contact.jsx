@@ -43,14 +43,14 @@ const Contact = () => {
                     <div className='textarea-box'>
                         <textarea className='w-100 p-3' name="Message" id="" cols="" rows="7" placeholder='Messages'></textarea>
                     </div>
-                    <div class="form-group row">
-                        <div class="col-12 text-center">
-                            <div class="form-check d-flex justify-content-center">
+                    <div className="form-group row">
+                        <div className="col-12 text-center">
+                            <div className="form-check d-flex justify-content-center">
                                 <div>
-                                    <input class=" form-check-input" type="checkbox" id="gridCheck1" />
+                                    <input className=" form-check-input" type="checkbox" id="gridCheck1" />
                                 </div>
                                 <div>
-                                    <label class="form-check-label" for="gridCheck1">
+                                    <label className="form-check-label" for="gridCheck1">
                                         I agree that my submitted data is being collected and stored.
                                     </label>
                                 </div>

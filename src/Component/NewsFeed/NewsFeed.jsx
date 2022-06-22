@@ -1,12 +1,9 @@
 import React from 'react';
 import "./NewsFeed.css"
 import newsFeedImage from "../../img/newsFeed1.png"
-import newsFeedImage2 from "../../img/newsfeed2.png"
 import newFeed2 from "../../img/newsfeed2.png"
 import clock from "../../img/clock.png"
 import eye from "../../img/eye.png"
-import search from "../../img/search.png"
-import okay from "../../img/okaySign.png"
 import circle from "../../img/cercle.png"
 
 
@@ -65,27 +62,15 @@ const NewsFeed = () => {
                     </div>
                     <div className="col-12 col-md-4 ">
                         <div className='search'>
-                      {/*   <div className=''>
-                            <form class="form-inline my-2 my-lg-0">
-                                <input class="form-control " type="search" placeholder="Search" aria-label="Search" />
-                                <button class=" btn  my-2 my-sm-0" type="submit"><img src={search} alt="" /></button>
-                            </form>
-                        </div> */}
-                       <div className='text-left'>
-                      {/*  <h3>CATEGORIES</h3>
-                        <p><img className='mr-3' src={okay} alt="" />Articles</p>
-                        <p><img className='mr-3' src={okay} alt="" />Events
-                        </p>
-                        <p><img className='mr-3' src={okay} alt="" />General</p>
-                        <p><img className='mr-3' src={okay} alt="" />News</p>
-                        <p><img className='mr-3' src={okay} alt="" />Post</p> */}
-                       </div>
-                       <div className='text-left'>
-                       <h3>RECENT POSTS</h3>
-                        <p><img className='mr-2' src={circle} alt="" />Costs Related to Service Callouts and Repairs During the Contract</p>
-                        <p><img className='mr-2' src={circle} alt="" />Cleaning Materials and Lubricants Required for Maintenance Cisits
-                        </p>
-                       </div>
+                            <div className='text-left'>
+
+                            </div>
+                            <div className='text-left'>
+                                <h3>RECENT POSTS</h3>
+                                <p><img className='mr-2' src={circle} alt="" />Costs Related to Service Callouts and Repairs During the Contract</p>
+                                <p><img className='mr-2' src={circle} alt="" />Cleaning Materials and Lubricants Required for Maintenance Cisits
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>

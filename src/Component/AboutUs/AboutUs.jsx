@@ -5,8 +5,6 @@ import readmoreArray from "../../img/leftarrayabout.png"
 import businessPolicy from "../../img/businessPolicy.png"
 import okaySign from "../../img/okaySign.png"
 import cost from "../../img/cost.svg"
-import high from "../../img/higli.svg"
-import ensure from "../../img/ensure.svg"
 import ContactInfo from '../Shared/ContactInfo/ContactInfo';
 const AboutUs = () => {
     return (
