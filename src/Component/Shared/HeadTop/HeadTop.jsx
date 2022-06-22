@@ -56,14 +56,14 @@ const HeadTop = () => {
                 <div className="container">
                     <div className="row align-items-center">
 
-                        <div className="col-lg-4 col-sm-2 text-align-left">
+                        <div className="col-lg-3 text-start">
                             {/* <!--            <div className="col-md-2 col-sm-6 d-sm-none">--> */}
                             <div className="img-fluid text-left">
-                                <img src={img11} alt="" />
+                                <Link to="/">  <img src={img11} alt="" /></Link>
                             </div>
                         </div>
 
-                        <div className="col-lg-8 col-sm-10">
+                        <div className="col-lg-9">
                             {/*  <!--            <div className="col-md-10 col-sm-6 d-sm-none">--> */}
                             <div className="row">
                                 <div className="col-lg-4 col-sm-4 ">
