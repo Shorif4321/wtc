@@ -14,7 +14,6 @@ const HeadTop = () => {
 
     var date = new Date();
     var disPlayDate = date.toLocaleDateString(date, { weekday: 'long' });
-
     var hour = date.getHours(); // => 9
     var minutes = date.getMinutes();
     var ampm = hour >= 12 ? 'pm' : 'am';

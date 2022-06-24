@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Service.css"
 import img2 from "../../../img/2.png"
+import { Link } from 'react-router-dom';
 const Service = () => {
     return (
         <div>
@@ -12,9 +13,7 @@ const Service = () => {
                         <h2>What Service We Offer</h2>
                     </div>
                     <div className='col-12 col-md-6 home-service2'>
-                        <button>
-                            ALL SERVICES
-                        </button>
+                        <Link to={'service'}> <button>ALL SERVICES</button></Link>
                     </div>
 
                 </div>
