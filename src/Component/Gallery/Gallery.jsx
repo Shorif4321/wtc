@@ -17,7 +17,7 @@ const Gallery = () => {
                 </div>
             </section>
             {/* ======= Gallery head ======== */}
-            <section className='container my-md-5 my-sm-4'>
+            <section id='gallery' className='container my-md-5 my-sm-4'>
                 <div className="gallery-head">
                     <h1>
                         Design, Fabrication & <br /> Maintenance

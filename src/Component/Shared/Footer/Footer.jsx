@@ -5,6 +5,7 @@ import "./Footer.css"
 import email from "../../../img/email icons.svg"
 import fb from "../../../img/notebook.svg"
 import location from "../../../img//Location-solid white-icons.svg"
+import { HashLink } from 'react-router-hash-link';
 
 const Footer = () => {
     return (
@@ -13,7 +14,9 @@ const Footer = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-3  mt-4 col-sm-12 text-sm-left text-md-left mb-sm-3">
-                            <img className='footerLogo' src={fl} style={{width: "150px", height: "75px"}} alt="" />
+                            <HashLink to="/home/#home">
+                                <img className='footerLogo' src={fl} style={{ width: "150px", height: "75px" }} alt="" />
+                            </HashLink>
                         </div>
 
                         <div className="col-md-9 col-sm-12">
@@ -64,13 +67,13 @@ const Footer = () => {
                             <div className="col-lg-2 col-sm-12 text-left">
                                 <ul>
                                     <li>Useful Links</li>
-                                    <li>About Us</li>
-                                    <li>Product </li>
-                                    <li>Services</li>
-                                    <li>Contact Us </li>
-                                    <li>News Feed</li>
-                                    <li>Gallery</li>
-                                    <li>Event</li>
+                                    <li><HashLink className='footer-Nav' to="/about-us/#about">About Us</HashLink></li>
+                                    <li><HashLink className='footer-Nav' to="/product/#product">Product</HashLink></li>
+                                    <li><HashLink className='footer-Nav' to="/services/#service">Services</HashLink></li>
+                                    <li><HashLink className='footer-Nav' to="/contact-us/#contact">Contact Us</HashLink></li>
+                                    <li><HashLink className='footer-Nav' to="/news-feed/#news-feed">News Feed</HashLink></li>
+                                    <li><HashLink className='footer-Nav' to="/gallery/#gallery">Gallery</HashLink></li>
+                                    <li><HashLink className='footer-Nav' to="/event/#event">Event</HashLink></li>
                                 </ul>
                             </div>
                             <div className="col-lg-3 col-sm-12 text-left">
@@ -95,11 +98,11 @@ const Footer = () => {
                                     <li>Gazipur</li>
                                     <li className="mt-3">
                                         <div className="social-links-footer">
-                                            <a href="#" target="_blank"><i style={{fontSize:"14px"}}
+                                            <a href="#" target="_blank"><i style={{ fontSize: "14px" }}
                                                 className="fab fa-facebook-f"></i></a>
-                                            <a href="#" target="_blank"><i  style={{fontSize:"14px"}}
+                                            <a href="#" target="_blank"><i style={{ fontSize: "14px" }}
                                                 className="fab fa-twitter"></i></a>
-                                            <a href="#" target="_blank"><i  style={{fontSize:"14px"}}
+                                            <a href="#" target="_blank"><i style={{ fontSize: "14px" }}
                                                 className="fab fa-instagram"></i></a>
                                         </div>
                                     </li>
@@ -113,9 +116,10 @@ const Footer = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12 ">
-                            <div className="footer-end mt-5">
-                                <p className="float-left">@2022 Top It Ltd. All rights reserved.</p>
-                                <p className=" float-right pl-5 footer-pr">Partner & Contribute</p>
+                            <div className="footer-end d-md-flex justify-content-between">
+                                <h6>@2022 Top It Ltd. All rights reserved.</h6>
+                                <h6>Partner & Contribute</h6>
+
                             </div>
                         </div>
                     </div>

@@ -11,7 +11,7 @@ const NewsFeed = () => {
     return (
         <div>
             {/* ========== newsFeed banner section start ==========*/}
-            <section className='newsFeed-banner'>
+            <section id='news-feed' className='newsFeed-banner'>
                 <div className='col-md-7 mx-auto py-5'>
                     <div className='py-4'>
                         <h1 className='py-5'>NEWSFEED</h1>

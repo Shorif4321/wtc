@@ -5,7 +5,7 @@ import slider1 from "../../../img/slider.png"
 
 const Slider = () => {
     return (
-        <div className=''>
+        <div id='home' className=''>
             <Carousel fade className=''>
                 <Carousel.Item className=''>
                     <img

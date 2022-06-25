@@ -6,7 +6,7 @@ import rightarrow from "../../img/right.png"
 const ProductPage = () => {
     return (
         <div>
-            <div className='product-hero p-5'>
+            <div id='product' className='product-hero p-5'>
                 <div className='col-md-5 col-12  m-auto py-md-3'>
                     <h1>Our Machineries products</h1>
                     <p className=''>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor tempus mauris ligula eget. Vehicula lorem sit integer volutpat nunc eu, consequat nisi. Phasellus tincidunt fames auctor vestibulum.</p>
@@ -242,8 +242,8 @@ const ProductPage = () => {
             </section >
             {/* our Chemicals products end */}
 
-             {/* BioChip start */}
-             <div className='product-hero p-md-5 p-sm-3'>
+            {/* BioChip start */}
+            <div className='product-hero p-md-5 p-sm-3'>
                 <div className='col-md-6 col-lg-6 col-12 m-auto py-3'>
                     <h1>BioChip 30TM</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor tempus mauris ligula eget. Vehicula lorem sit integer volutpat nunc eu.</p>

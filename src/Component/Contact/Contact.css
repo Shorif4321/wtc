@@ -33,7 +33,15 @@
     color: #2B2B2B;
 
 }
-.map-left {}
+
+.iframe {
+    width: 100;
+    height: 100%;
+}
+
+.map-left {
+    text-align: left;
+}
 
 .map-left h2 {
     font-family: 'Inter', sans-serif;
@@ -109,11 +117,11 @@
     margin: 34px 0;
     border: 1px solid #00A652;
 }
-.form-button:hover{
+
+.form-button:hover {
     background-color: #00a65300;
     color: #403F3F;
     transition: 0.3s ease-in
-
 }
 
 @media only screen and (max-width: 667px) {

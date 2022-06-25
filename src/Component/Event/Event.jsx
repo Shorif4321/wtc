@@ -11,7 +11,7 @@ const Event = () => {
             <section className='newsFeed-banner'>
                 <div className='col-md-7 mx-auto py-5'>
                     <div className='py-4'>
-                        <h1 className='py-5'>Event</h1>
+                        <h1 id='event' className='py-5'>Event</h1>
                     </div>
                 </div>
             </section>

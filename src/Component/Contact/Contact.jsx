@@ -15,12 +15,16 @@ const Contact = () => {
             </section>
             {/* ======= contact map ======== */}
             <section>
+                <div>
+
+                </div>
                 <div className="d-md-flex align-items-center my-5 container">
                     <div className="col-12 col-md-7">
-                        <img className='img-fluid' src={map} alt="" />
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233668.38703802988!2d90.27923923029098!3d23.780573257422205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e0!3m2!1sen!2sbd!4v1656134714332!5m2!1sen!2sbd" style={{ width: "100%", height: '400px' }}></iframe>
 
+                        {/*    <img className='img-fluid' src={map} alt="" /> */}
                     </div>
-                    <div className="map-left col-12  col-md-5 text-left ml-md-3">
+                    <div className="map-left col-12  col-md-5  ml-md-3">
                         <h2>Find Us</h2>
                         <h4>Location:</h4>
                         <p>123, New Lenox Chicago, IL 60606</p>
@@ -33,7 +37,7 @@ const Contact = () => {
                 </div>
             </section>
             {/* ======= contact from start ======== */}
-            <section className='my-5 py-5 from-main'>
+            <section id='contact' className='my-5 py-5 from-main'>
                 <div className='container px-sm-5'>
                     <h1 className=''>Send Message</h1>
                     <div className='d-md-flex px-md-5 contact-from mt-4 my-1'>

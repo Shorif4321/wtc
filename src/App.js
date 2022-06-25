@@ -12,6 +12,7 @@ import Footer from './Component/Shared/Footer/Footer';
 import Header from './Component/Shared/Header/Header';
 import Service from './Component/Home/Service/Service';
 import NotFound from './Component/NotFound/NotFound';
+import AllService from './Component/AllService/AllService';
 
 
 function App() {
@@ -29,7 +30,8 @@ function App() {
           <Route path="event" element={<Event />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="contact-us" element={<Contact />} />
-          <Route path="*" element={<NotFound/>} />
+          <Route path="services" element={<AllService />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer></Footer>
       </BrowserRouter>

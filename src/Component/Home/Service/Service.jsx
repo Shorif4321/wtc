@@ -1,11 +1,26 @@
-import React from 'react';
+
 import "./Service.css"
 import img2 from "../../../img/2.png"
 import { Link } from 'react-router-dom';
-const Service = () => {
-    return (
-        <div>
+import { useEffect, useState } from "react";
+import { Row, Card, Col } from "react-bootstrap";
 
+
+const Service = () => {
+    const [services, setServices] = useState([]);
+
+    useEffect(() => {
+        fetch('https://admin.waterchembd.com/api/get-services')
+            .then(res => res.json())
+            .then(data => setServices(data))
+
+
+    }, [])
+    const mapServices = services.data;
+    console.log(mapServices);
+
+    return (
+        <>
             <section>
                 <div className='home-service container d-md-flex my-5'>
                     <div className='home-service1 col-12 col-md-6'>
@@ -18,6 +33,41 @@ const Service = () => {
 
                 </div>
             </section>
+
+            {mapServices.map(one =>
+                <div className="d-flex">
+                    <Row xs={1} md={2} className="g-3 container m-auto">
+
+                        <Col className="">
+                            <Card>
+                                <Card.Img variant="top" src={`https://admin.waterchembd.com/storage/${one?.image}`} />
+                                <Card.Body className="text-start">
+                                    <Card.Title>{one?.title}</Card.Title>
+                                    <Card.Text>
+                                        {
+                                            one?.description
+                                        }
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+
+                    </Row>
+                </div>
+
+                /*    <Card className="container m-auto d-flex ">
+                       <Card.Img variant="top" className="img-fluid w-100"  />
+                       <Card.Body>
+                           <Card.Title></Card.Title>
+                           <Card.Text>
+                              
+                           </Card.Text>
+                       </Card.Body>
+   
+                   </Card> */
+            )}
+
+
 
             <div className="container row text-md-center text-left mx-auto my-5">
                 <div className="col-12 col-md-6 col-lg-4  pb-4">
@@ -86,7 +136,7 @@ const Service = () => {
                 </div>
 
             </div>
-        </div >
+        </ >
     );
 };
 
