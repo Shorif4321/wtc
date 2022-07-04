@@ -8,6 +8,11 @@ import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
 const ServiceDetails = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
+
     const { id } = useParams()
 
     const [readDetails, SetReadDetails] = useState([]);

@@ -6,6 +6,14 @@ import location from "../../../img/location icons.svg"
 import { Link } from 'react-router-dom';
 const About = () => {
 
+    const [infos, setfos] = useState([]);
+    useEffect(() => {
+        fetch("https://admin.waterchembd.com/api/get-info")
+            .then(res => res.json())
+            .then(data => setfos(data?.data))
+        console.log(infos);
+    }, {})
+
 
     const [homeAbouts, setHomeAbouts] = useState([])
     useEffect(() => {
@@ -13,6 +21,13 @@ const About = () => {
             .then(res => res.json())
             .then(data => setHomeAbouts(data.data))
     }, [])
+
+    const [drovdawnServices, setDropdawnServices] = useState([]);
+    useEffect(() => {
+        fetch("https://admin.waterchembd.com/api/get-service-menus")
+            .then(res => res.json())
+            .then(data => setDropdawnServices(data?.data))
+    }, {})
 
 
     return (
@@ -25,8 +40,6 @@ const About = () => {
                                 <div className="col-md-6 col-sm-6">
                                     <div className="about-section">
                                         <img className="card-img-top img-fluid" src={`https://admin.waterchembd.com/storage/${homeAbout.image}`} alt="" />
-                                        {/*   <img src={aboutImag} className="card-img-top img-fluid" alt="" /> */}
-
                                         <div className="img-box5">
                                             <h2 className="text-white font-weight-bold text-left mt-4 experience">10+ Years <br />Working
                                                 Experience</h2>
@@ -35,9 +48,9 @@ const About = () => {
                                 </div>
                                 <div className="col-md-6 col-sm-6">
                                     <div className="ml-3">
-                                        <h5 className="text-success about-text text-uppercase mt-4 text-left">About Us</h5>
-                                        <h2 className="text-uppercase mt-4 text-left ">{homeAbout.title}</h2>
-                                        <p className="about-p text-left">{homeAbout.sub_title}</p>
+                                        <h5 className="text-success about-text text-uppercase mt-4 text-start">About Us</h5>
+                                        <h2 className="text-uppercase mt-4 text-start ">{homeAbout.title}</h2>
+                                        <p className="about-p text-start">{homeAbout.sub_title}</p>
                                         <div className="about-icons ml-0">
 
                                             <div className="row ">
@@ -45,7 +58,7 @@ const About = () => {
                                                     <ul style={{ paddingLeft: "0px" }} className="header-links float-left mt-3">
                                                         <li><a href="#"><img src={call} className="img-fluid" alt="" />
                                                             <p className="ml-3 about-icon-text text-left2 text-left">Call Us Now <br /><span
-                                                                className="i-color font-weight-bold"> (208)555-0112</span></p>
+                                                                className="i-color font-weight-bold">{infos.mobile}</span></p>
                                                         </a></li>
                                                     </ul>
                                                 </div>
@@ -53,8 +66,8 @@ const About = () => {
                                                 <div className="col-lg-7 col-12 about-position">
                                                     <ul style={{ paddingLeft: "0px" }} className="header-links float-left mt-3">
                                                         <li><a href="#"><img src={location} className="img-fluid" alt="" />
-                                                            <p className="ml-3 about-icon-text text-left2 text-left">2416 Mapleview Drive <span
-                                                                className="i-color font-weight-bold">Tampa, FL 33634</span></p>
+                                                            <p className="ml-3 about-icon-text text-left2 text-left">Loaction <span
+                                                                className="i-color font-weight-bold">{infos.address}</span></p>
                                                         </a></li>
                                                     </ul>
                                                 </div>
@@ -63,12 +76,9 @@ const About = () => {
                                                 </div>
                                             </div>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
-
-
                         </div>)
 
                     }

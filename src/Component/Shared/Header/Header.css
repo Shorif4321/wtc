@@ -242,6 +242,16 @@
 
 }
 
+.product-url {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    padding: 0px 7px;
+    font-size: 14px;
+    text-align: left;
+    margin: 0px;
+
+}
 
 @media only screen and (max-width:991px) and (min-width:668px) {
 

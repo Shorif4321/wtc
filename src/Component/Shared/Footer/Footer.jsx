@@ -9,16 +9,14 @@ import { HashLink } from 'react-router-hash-link';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
+    /* ======== service footer ========= */
+    const [drovdawnServices, setDropdawnServices] = useState([]);
+    useEffect(() => {
+        fetch("https://admin.waterchembd.com/api/get-service-menus")
+            .then(res => res.json())
+            .then(data => setDropdawnServices(data?.data))
+    }, {})
 
-    /*  const [footers, setfooters] = useState([]);
-     useEffect(() => {
-         fetch("https://admin.waterchembd.com/api/get-service-menus")
-             .then(res => res.json())
-             .then(data => setfooters(data))
-         console.log(footers);
-     }, {})
-
-  */
 
     const [infos, setfos] = useState([]);
     useEffect(() => {
@@ -26,6 +24,16 @@ const Footer = () => {
             .then(res => res.json())
             .then(data => setfos(data?.data))
     }, {})
+
+
+
+    const [homeAbouts, setHomeAbouts] = useState([])
+    useEffect(() => {
+        fetch('https://admin.waterchembd.com/api/get-home-about')
+            .then(res => res.json())
+            .then(data => setHomeAbouts(data.data))
+        console.log(homeAbouts);
+    }, [])
 
     return (
         <div>
@@ -52,7 +60,7 @@ const Footer = () => {
                                         <div className="footer-phone">
                                             <img src={fb} className="img-fluid float-left mr-4" alt="" />
                                             <p className="footer-p">Office Telephone : {infos.telephone} </p>
-                                            <p className="footer-p"> Mobile :{infos.mobile}</p>
+                                            <p className="footer-p">Mobile : {infos.mobile}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -63,22 +71,20 @@ const Footer = () => {
                         <div className="row justify-content-between">
                             <div className="col-lg-3 col-sm-12 text-start">
                                 <h6>About Us</h6>
-                                <p className='w-100 text-left'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Metus at ac odio pellentesque nulla
-                                    quis nunc consequat in.</p>
-                                {/* <div className="col-lg-7 col-sm-12 about-position">
-                                    <ul style={{paddingLeft: "0px"}} className="header-links float-left mt-3 m-sm-auto">
-                                        <li><a href="#"><img src={location} className="img-fluid float-left mt-3" alt="" />
-                                            <p className="ml-5 mb-4">2416 Mapleview Drive <span className="float-left">Tampa, FL
-                                                33634</span></p>
-                                        </a></li>
-                                    </ul>
-                                </div> */}
+
+                                {
+                                    homeAbouts?.map(homeAbout => <div key={homeAbout.id}>
+                                        <p className="w-100 text-left">{homeAbout.sub_title}</p>
+
+                                    </div>)
+
+                                }
                                 <div className='footer-location col-sm-12 d-flex d-flex justify-content-left align-items-center mb-sm-5 '>
                                     <div>
                                         <img src={location} alt="" />
                                     </div>
                                     <div className='address'>
-                                        <span className=''>Location</span> <br />
+                                        <span className=''></span>
                                         <span className=''>{infos.address}</span>
                                     </div>
                                 </div>
@@ -99,12 +105,22 @@ const Footer = () => {
                             <div className="col-lg-3 col-sm-12 text-start">
                                 <ul>
                                     <li>Services</li>
-                                    <li><Link className='footer-Nav' to="/gallery">Environment Impact Assessment (EIA)</Link></li>
-                                    <li><Link className='footer-Nav' to="/gallery">Effluent Treatment Plant (ETP)</Link></li>
-                                    <li><Link className='footer-Nav' to="/gallery">Chemicals</Link></li>
-                                    <li><Link className='footer-Nav' to="/gallery">Machineries</Link></li>
-                                    <li><Link className='footer-Nav' to="/gallery">Machineries</Link></li>
-                                    <li><Link className='footer-Nav' to="/gallery">3R Policy</Link></li>
+
+                                    {
+                                        drovdawnServices?.map(dropdawn =>
+                                            <ul key={dropdawn.id}>
+                                                <li><Link className='d-none' to="/service">{dropdawn.menu_name} &#x203A;</Link>
+                                                    {
+                                                        dropdawn.services.map(services =>
+                                                            <li className='footer-Nav'  ><Link className='footer-Nav' to={`/serviceDetails/${services.id}`}>{services.title}</Link>
+                                                            </li>
+                                                        )
+                                                    }
+                                                </li>
+                                            </ul>
+                                        )}
+
+
                                 </ul>
 
                             </div>

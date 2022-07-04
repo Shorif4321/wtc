@@ -11,6 +11,15 @@ import { Dropdown } from 'bootstrap';
 const Header = () => {
 
 
+    const [dropProducts, dripProducts] = useState([]);
+    useEffect(() => {
+        fetch("https://admin.waterchembd.com/api/get-products")
+            .then(res => res.json())
+            .then(data => dripProducts(data?.data))
+        console.log(dropProducts);
+    }, {})
+
+
     const [drovdawnServices, setDropdawnServices] = useState([]);
     useEffect(() => {
         fetch("https://admin.waterchembd.com/api/get-service-menus")
@@ -31,62 +40,49 @@ const Header = () => {
                             <div className='myBorder'>
                                 <Nav.Link ><Link className='route-item' to="about-us">About Us</Link></Nav.Link>
                             </div>
-
+                            {/* =============== Product Drop Down start =============== */}
                             <NavDropdown className='myBorder route-item text-white' title="Product" id="collasible-nav-dropdown">
-                                <Nav.Link className='drop-item-main'><Link className='drop-item' to="/product">Product</Link> </Nav.Link>
-                            </NavDropdown>
-
-                            <NavDropdown className='myBorder route-item' title="Service" id="collasible-nav-dropdown">
-                                {/* ====== ===== service Dropdown  Menu start ============ */}
-                                <div class="menu">
-                                    {
-                                        drovdawnServices?.map(dropdawn => <ul key={dropdawn.id}>
-                                            <li><Link to="/service"> Menu Items &#x203A;</Link>
-                                                <ul>
-                                                    <li> <Link to="/service">  {dropdawn.services.title}</Link> </li>
-                                                    <li> <a href="https://www.google.com/"> Development soe mte tei </a> </li>
-                                                    <li> <a href="https://www.google.com/"> Development soe mte tei </a> </li>
-                                                    <li> <a href="https://www.google.com/"> Development soe mte tei </a> </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-
-                                        )}
-
-                                </div>
-
-
-                                {/* ====== ===== service Dropdown  Menu start ============ */}
-
                                 {/*  {
-                                    drovdawnServices?.map(dropdawn => <NavDropdown key={dropdawn.id} className=' myBorder route-item text-black' title={dropdawn.menu_name} id="collasible-nav-dropdown">
-
-                                        {
-                                            <ul className='myul'>
-                                                <Nav.Link className='route-item text-black'><Link className='text-decoration-none text-secondary' to="/service">
-                                                    Service 1
-                                                </Link> </Nav.Link>
-                                            </ul>
-                                        }
-
-
-                                    </NavDropdown>
-
-
-                                    )
+                                    dropProducts?.map(product => <Link to={`/productDetails/${product.id}`} className='product-url'>{product.title} </Link>)
                                 } */}
 
+                                {
+                                    drovdawnServices?.map(dropdawn =>
+                                        <ul className="product-url" key={dropdawn.id}>
+
+                                            {
+                                                dropdawn.services.map(services =>
+                                                    <li className='footer-Nav'  ><Link className='footer-Nav' to={`/serviceDetails/${services.id}`}>{services.title}</Link>
+                                                    </li>
+                                                )
+                                            }
+
+                                        </ul>
+                                    )}
+
                             </NavDropdown>
 
 
+                            {/* =============== Service Drop Down start =============== */}
+                            <NavDropdown className='myBorder route-item' title="Service" id="collasible-nav-dropdown">
+                                <div class="menu">
+                                    {
+                                        drovdawnServices?.map(dropdawn =>
 
-                            {/* <Nav.Link className='drop-item-main'><Link className='drop-item' to="/service">Service</Link> </Nav.Link>
-                                <Nav.Link className='drop-item-main'><Link className='drop-item' to="/service">Service</Link> </Nav.Link>
-                                <Nav.Link className='drop-item-main'><Link className='drop-item' to="/product">Service</Link> </Nav.Link>
-                                <NavDropdown.Divider />
-                                <Nav.Link className='drop-item-main'><Link className='drop-item' to="/product">Service</Link> </Nav.Link> */}
-
-
+                                            <ul key={dropdawn.id}>
+                                                <li><Link className='footer-Nav' to="/service">{dropdawn.menu_name} &#x203A;</Link>
+                                                    <ul>
+                                                        {
+                                                            dropdawn.services.map(services =>
+                                                                <li> <Link className='footer-Nav' to={`/serviceDetails/${services.id}`}>  {services.title}</Link> </li>
+                                                            )
+                                                        }
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        )}
+                                </div>
+                            </NavDropdown>
 
                             <div className='myBorder'>
                                 <Nav.Link> <Link className=' route-item' to="news-feed">newsFeed</Link> </Nav.Link>
@@ -101,25 +97,7 @@ const Header = () => {
                             <div className='myBorder'>
                                 <Nav.Link > <Link className=' route-item text-right' to="contact-us ">contact us</Link>  </Nav.Link>
                             </div>
-
                         </Nav>
-                        <Nav>
-
-
-                        </Nav>
-
-                        {/*  <Nav>
-                            <Form className="d-flex">
-                                <Form.Control
-                                    type="search"
-                                    placeholder="Search"
-                                    className="me-2"
-                                    aria-label="Search"
-                                />
-                                <Button variant="outline-success">Search</Button> 
-                            </Form>
-                        </Nav> */}
-
                     </Navbar.Collapse>
                 </Container>
             </Navbar>

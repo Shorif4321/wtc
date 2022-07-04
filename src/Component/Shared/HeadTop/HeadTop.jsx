@@ -57,22 +57,22 @@ const HeadTop = () => {
                 <div className="container">
                     <div className="row align-items-center">
 
-                        <div className="col-lg-2 text-start">
+                        <div className="col-lg-3 text-start">
                             <div className="img-fluid text-left">
                                 <Link to="/">  <img src={img11} alt="" /></Link>
                             </div>
                         </div>
-                        <div className="col-lg-10">
+                        <div className="col-lg-9">
                             <div className="row justify-content-end">
-                                <div className="col-lg-4 col-sm-4 d-flex align-items-center justify-content-end">
+                                <div className="col-lg-4 d-flex align-items-center justify-content-end">
                                     <img className="img-fluid" src={call} alt="" />
                                     <p className="ms-4 text-start">Call Us Now <br /> <span className="i-color">{infos.mobile}</span></p>
                                 </div>
-                                <div className="col-lg-4 col-sm-4 d-flex align-items-center justify-content-end">
+                                <div className="col-lg-4  d-flex align-items-center ps-5">
                                     <img src={location} className="img-fluid " alt="" />
-                                    <p className="ms-4 text-start">Location <br /> <span className="i-color"> {infos.address}</span></p>
+                                    <p className="ms-4 text-start">  <span className="i-color"> {infos.address}</span></p>
                                 </div>
-                                <div className="col-lg-4 col-sm-4 d-flex align-items-center justify-content-end">
+                                <div className="col-lg-4  d-flex align-items-center justify-content-end">
                                     <img src={calendar} className="img-fluid " alt="" />
                                     <p className="ms-4 text-start">Mon - Thursday <br /> <span className="i-color">9.00am to 18.00pm</span></p>
                                 </div>
