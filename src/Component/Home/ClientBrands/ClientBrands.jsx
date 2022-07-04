@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./ClientBrands.css"
@@ -48,6 +48,14 @@ const ClientBrands = () => {
         ]
     };
 
+
+    const [homeSiders, sethomeSiders] = useState([])
+    useEffect(() => {
+        fetch('https://admin.waterchembd.com/api/get-home-client')
+            .then(res => res.json())
+            .then(data => sethomeSiders(data.data))
+    }, [])
+
     return (
         <div className=' my-5 pt-5 px-5 container'>
             <div className="title mb-5">
@@ -55,10 +63,19 @@ const ClientBrands = () => {
                 <h3 className="text-center custom-service text-muted ">Lorem ipsum dolor sit amet, solor ut adipiscing elit.
                 </h3>
             </div>
-
             <Slider {...settings}>
+                {
+                    homeSiders?.map(homeSlide => <div>
+                        <img className='' src={`https://admin.waterchembd.com/storage/${homeSlide.image}`} alt="" />
+                    </div>)
+                }
+            </Slider>
+
+
+            {/*  <Slider {...settings}>
+
                 <div>
-                    <img className='img-fluid' src={i1}  alt="" />
+                    <img className='img-fluid' src={i1} alt="" />
                 </div>
                 <div>
                     <img src={i2} className="img-fluid" alt="" />
@@ -75,7 +92,7 @@ const ClientBrands = () => {
                 <div>
                     <img src={i5} className="img-fluid" alt="" />
                 </div>
-            </Slider>
+            </Slider> */}
         </div>
     );
 };

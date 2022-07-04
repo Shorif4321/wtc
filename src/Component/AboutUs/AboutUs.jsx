@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import "./AboutUs.css"
 import about from "../../img/about.png"
 import readmoreArray from "../../img/leftarrayabout.png"
@@ -6,7 +6,23 @@ import businessPolicy from "../../img/businessPolicy.png"
 import okaySign from "../../img/okaySign.png"
 import cost from "../../img/cost.svg"
 import ContactInfo from '../Shared/ContactInfo/ContactInfo';
+import { Link } from 'react-router-dom';
+
 const AboutUs = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
+
+    const [about, setAbout] = useState([])
+    useEffect(() => {
+        fetch('https://admin.waterchembd.com/api/get-about')
+            .then(res => res.json())
+            .then(data => setAbout(data.data))
+    }, [])
+
+
     return (
         <>
             {/* About banner section start */}
@@ -19,27 +35,40 @@ const AboutUs = () => {
                         </p>
                     </div>
                 </div>
-
             </section>
+
             <div className='my-5 py-5'>
+
+                {
+                    about?.map(abou => <section className='container d-md-flex justify-content-between align-items-center'>
+                        <div className='wtc-left col-12 col-md-5 col-lg-5'>
+                            <img className='about-imag1 rounded img-fluid' src={`https://admin.waterchembd.com/storage/${abou.image}`} alt="" />
+                            {/*  <img className='about-imag1' src={about} alt="" /> */}
+                        </div>
+                        <div className='wtc-right text-left col-12 col-md-7 col-lg-7'>
+                            {/*    <h5 dangerouslySetInnerHTML={{ __html: abou.title }}></h5> */}
+                            <h2 dangerouslySetInnerHTML={{ __html: abou.sub_title }}></h2>
+                            <p dangerouslySetInnerHTML={{ __html: abou.description.slice(0, 1000) }}>
+                            </p>
+                            <Link to="/aboutDetails" className='read-more'>Read More.. <img src={readmoreArray} alt="" /><img src={readmoreArray} alt="" /></Link>
+                        </div>
+
+                    </section>)
+                }
                 {/* WTC PREMIUM WATER SOLUTIONS Company Overview section start */}
-                <section className='container d-md-flex justify-content-between'>
+                {/* <section className='container d-md-flex justify-content-between'>
                     <div className='wtc-left col-12 col-md-5 col-lg-5'>
-                        <img className='about-imag1' src={about} alt="" />
+                       <img className='about-imag1' src={about} alt="" /> 
                     </div>
                     <div className='wtc-right text-left col-12 col-md-7 col-lg-7'>
                         <h5>ABOUT US</h5>
-                        <h2>WTC PREMIUM WATER SOLUTIONS Company Overview</h2>
+                        <h2></h2>
                         <p>
                             Water Technology BD Ltd (WTC) proudly conducted hundreds of Initial Environment Examination(IEE), Environmental Impact Assessment (EIA), Environmental Management Plan (EMP), Resettlement Plan, etc., & about forty Effluent Treatment Plant (ETP), Sewage Treatment Plant (STP) in various fields for the Textile (Dyeing, Printing and Weaving), Oil, Pulp & Paper, Gas & Energy, Tannery & Leather, Fertilizer, Pharmaceutical, Cement, Iron & Steel, Ceramic, Infrastructure, Food Industry, Chemical Industries, Power Sector etc. Water Technology BD Ltd (WTBL) specially working with Bangladeshi leading groups such as Meghna Group, City Group, Standard Group, TK Group etc. A group of capable Engineers & Technical Personal involved actively in this organization
                         </p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet pharetra gravida eu, nisi erat dignissim. Libero dictumst amet mi in placerat etiam tempor sit. Dictum aenean viverra proin sit vel pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet pharetra gravida eu, nisi erat dignissim. Libero dictumst amet mi in placerat etiam tempor sit. Dictum aenean viverra proin sit vel pulvinar.
-                        </p>
-                        <p className='read-more'>Read More.. <img src={readmoreArray} alt="" /> <img src={readmoreArray} alt="" /></p>
-
+                        <Link to="/" className='read-more'>Read More.. <img src={readmoreArray} alt="" /></Link>
                     </div>
-                </section>
+                </section> */}
             </div>
 
             {/*  ===========Business Policy section start========= */}

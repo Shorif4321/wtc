@@ -12,7 +12,11 @@ import Footer from './Component/Shared/Footer/Footer';
 import Header from './Component/Shared/Header/Header';
 import Service from './Component/Home/Service/Service';
 import NotFound from './Component/NotFound/NotFound';
-import AllService from './Component/AllService/AllService';
+import ShowAllService from './Component/Home/Service/AllService/ShowAllService';
+import ServiceDetails from './Component/Home/Service/ServiceDetails/ServiceDetails';
+import ProductDetail from './Component/ProductDetail/ProductDetail';
+import AboutDetails from './Component/AboutUs/AboutDetails/AboutDetails';
+import NewsFeedDetails from './Component/NewsFeed/NewsFeedDetails/NewsFeedDetails';
 
 
 function App() {
@@ -22,15 +26,18 @@ function App() {
         <Header></Header>
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="about-us" element={<AboutUs />} />
-          <Route path="product" element={<ProductPage />} />
-          <Route path="service" element={<Service />} />
-          <Route path="news-feed" element={<NewsFeed />} />
-          <Route path="event" element={<Event />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/aboutDetails" element={<AboutDetails />} />
+          <Route path="/product" element={<ProductPage />} />
+          <Route path="/service" element={<Service />} />
+          <Route path="/news-feed" element={<NewsFeed />} />
+          <Route path="/event" element={<Event />} />
           <Route path="/gallery" element={<Gallery />} />
-          <Route path="contact-us" element={<Contact />} />
-          <Route path="services" element={<AllService />} />
+          <Route path="/contact-us" element={<Contact />} />
+          <Route path="/allServices" element={<ShowAllService />} />
+          <Route path="/serviceDetails/:id" element={<ServiceDetails />} />
+          <Route path="/newsFeedDetails/:id" element={<NewsFeedDetails />} />
+          <Route path="/productDetails/:id" element={<ProductDetail />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer></Footer>

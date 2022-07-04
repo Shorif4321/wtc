@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import "./NotFound.css"
 import { Link } from 'react-router-dom';
 
 const NotFoun = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     return (
         <div className="error-page container">
             <h1 className="text-primary">404</h1>

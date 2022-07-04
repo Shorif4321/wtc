@@ -1,0 +1,38 @@
+[
+    {
+        "id": "1",
+        "image": "https://i.ibb.co/6XZbSFr/service-Name3.png",
+        "name": "Branding & Identity",
+        "des": " “Your Brand, Your Identity” is the main motto of our company. Reach at million people with you own identity and open a new widow of business."
+    },
+    {
+        "id": "2",
+        "image": "https://i.ibb.co/6XZbSFr/service-Name3.png",
+        "name": "SAAS Development",
+        "des": "Software as a service (SaaS) is a software distribution model in which a cloud provider hosts applications and makes them available to end users over the internet."
+    },
+    {
+        "id": "3",
+        "image": "https://i.ibb.co/6XZbSFr/service-Name3.png",
+        "name": "Graphic Design",
+        "des": "Graphics Designs is one of the strongest media of exposing thousands of words in a picture. It helps to make your brand how much colorful and visible to the people."
+    },
+    {
+        "id": "4",
+        "image": "https://i.ibb.co/2y5smmW/service-Name4.png",
+        "name": "Web Design & Development",
+        "des": "A professional, eye-catching, responsive and user-friendly website must bring your brand to life. Start a good business journey with clients with just a click."
+    },
+    {
+        "id": "5",
+        "image": "https://i.ibb.co/brShnDz/service-Name5.png",
+        "name": "Affiliate Marketing",
+        "des": "The affiliate marketing is such a profit generating model where you will promote or sell other’s products and get a commission on each conversion."
+    },
+    {
+        "id": "6",
+        "image": "https://i.ibb.co/grcF5gW/service-Name6.png",
+        "name": "SEO & Digital Marketing",
+        "des": "Digital Marketing is such a marketing strategy in which business is run through using various digital platforms not using the traditional marketing tools and media."
+    }
+]

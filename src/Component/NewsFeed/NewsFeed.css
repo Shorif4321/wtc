@@ -63,15 +63,26 @@
 }
 
 .newsFeed button {
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     background-color: #00A652;
     border: 1px solid #00A652;
     padding: 17px 40px;
 }
-.newsFeed button:hover{
+
+.newsFeed button:hover {
     background-color: #00a65302;
     color: black;
     transition: 0.3s ease-in
+}
+
+.newsFeedButton {
+    text-decoration: none;
+    color: white;
+}
+
+.newsFeedButton:hover {
+    text-decoration: none;
+    color: #2B2B2B;
 }
 
 .search {
@@ -113,54 +124,56 @@
     padding: 8px 16px
 } */
 @media only screen and (max-width: 667px) {
-    
-.newsFeed-banner h1 {
-    font-weight: 600;
-    font-size: 25px;
-    line-height: 0px;
-    margin: 0 0 0px 0;
-}
+
+    .newsFeed-banner h1 {
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 0px;
+        margin: 0 0 0px 0;
+    }
 
 
-.newsFeed h1 {
-    font-size: 25px;
-    line-height: 30px;
-    margin: 20px 0 14px 0;
+    .newsFeed h1 {
+        font-size: 25px;
+        line-height: 30px;
+        margin: 20px 0 14px 0;
+    }
+
+    .newsFeed p {
+        font-size: 16px;
+        line-height: 25px;
+        margin: 15px 0 20px 0;
+    }
+
+    .newsFeed button {
+        padding: 7px 12px;
+    }
+
+    .search {
+        background: #DCE8F6;
+        padding: 1px 20px;
+    }
+
+    .search h3 {
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 28px;
+    }
+
+    .search p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .form-control {
+        width: 82%;
+    }
+
+    .search input {
+        padding: 20px 30px;
+    }
 }
 
-.newsFeed p {
-    font-size: 16px;
-    line-height: 25px;
-    margin: 15px 0 20px 0;
-}
+@media only screen and (max-width:991px) and (min-width:668px) {}
 
-.newsFeed button {
-    padding: 7px 12px;
-}
-
-.search {
-    background: #DCE8F6;
-    padding: 1px 20px;
-}
-
-.search h3 {
-    font-weight: 500;
-    font-size: 25px;
-    line-height: 28px;
-}
-
-.search p {
-    font-size: 16px;
-    line-height: 28px;
-}
-
-.form-control {
-    width: 82%;
-}
-
-.search input {
-    padding: 20px 30px;
-}
-}
-@media only screen and (max-width:991px) and (min-width:668px){}
 @media only screen and (max-width: 1200px) and (min-width:992px) {}

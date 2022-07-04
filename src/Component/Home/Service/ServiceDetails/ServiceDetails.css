@@ -25,7 +25,11 @@
 
 }
 
-.service-detail-main img {}
+.service-detail-main img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+}
 
 .service-detail-main p {
     font-family: 'Inter', sans-serif;
@@ -86,50 +90,50 @@
 
 
 }
+
 @media only screen and (max-width: 667px) {
     .service-details-hero h1 {
         font-weight: 600;
         font-size: 25px;
     }
-    
+
     .service-detail-main {}
-    
+
     .service-detail-main h2 {
         font-weight: 600;
         font-size: 23px;
         line-height: 40px;
         margin: 0px 0 24px 0;
-    
+
     }
-    
+
     .service-second h2 {
         font-size: 23px;
         line-height: 34px;
         color: #2B2B2B;
         text-align: center;
         margin: 20px 0 15px 0;
-    
+
     }
-    
+
     .service-second p {
         margin: 0px 0 0px 0;
         text-align: center;
     }
-    
+
     .service-same {
         padding: 0;
     }
-    
-    .service-same img {
-    }
-    
+
+    .service-same img {}
+
     .service-same h1 {
         font-size: 16px;
         line-height: 19px;
         color: #2B2B2B;
         margin: 16px 0px 0px 0;
     }
-    
+
     .service-same p {
         font-family: 'Inter', sans-serif;
         font-style: normal;
@@ -138,11 +142,11 @@
         line-height: 26px;
         color: #403F3F;
         text-align: justify;
-    
-    
+
+
     }
 }
-@media only screen and (max-width:991px) and (min-width:668px){
-    
-}
+
+@media only screen and (max-width:991px) and (min-width:668px) {}
+
 @media only screen and (max-width: 1200px) and (min-width:992px) {}

@@ -3,21 +3,22 @@ import "./Service.css"
 import img2 from "../../../img/2.png"
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from "react";
-import { Row, Card, Col } from "react-bootstrap";
+import SingleService from "./SingleService/SingleService";
 
 
 const Service = () => {
-    const [services, setServices] = useState([]);
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
+
+    const [services, setServices] = useState([]);
     useEffect(() => {
         fetch('https://admin.waterchembd.com/api/get-services')
             .then(res => res.json())
             .then(data => setServices(data))
-
-
     }, [])
-    const mapServices = services.data;
-    console.log(mapServices);
+    const allServices = services?.data?.slice(0, 6);
 
     return (
         <>
@@ -28,34 +29,28 @@ const Service = () => {
                         <h2>What Service We Offer</h2>
                     </div>
                     <div className='col-12 col-md-6 home-service2'>
-                        <Link to={'service'}> <button>ALL SERVICES</button></Link>
+                        <Link to="/allServices"> <button>ALL SERVICES</button></Link>
                     </div>
 
                 </div>
             </section>
 
-            {mapServices.map(one =>
-                <div className="d-flex">
-                    <Row xs={1} md={2} className="g-3 container m-auto">
+            <div className="container row text-md-center text-left mx-auto my-5">
+                {
 
-                        <Col className="">
-                            <Card>
-                                <Card.Img variant="top" src={`https://admin.waterchembd.com/storage/${one?.image}`} />
-                                <Card.Body className="text-start">
-                                    <Card.Title>{one?.title}</Card.Title>
-                                    <Card.Text>
-                                        {
-                                            one?.description
-                                        }
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                        </Col>
+                    allServices?.map(service => <SingleService
+                        key={service?.id}
+                        service={service}
+                    ></SingleService>)
 
-                    </Row>
+                }
+                <div className='home-service-btn container w-75 mt-2'>
+                    <Link to="/allServices"> <button className='button-1'>SEE MORE</button></Link>
+
                 </div>
+            </div>
 
-                /*    <Card className="container m-auto d-flex ">
+            {/*   <Card className="container m-auto d-flex ">
                        <Card.Img variant="top" className="img-fluid w-100"  />
                        <Card.Body>
                            <Card.Title></Card.Title>
@@ -64,12 +59,10 @@ const Service = () => {
                            </Card.Text>
                        </Card.Body>
    
-                   </Card> */
-            )}
+                   </Card> */}
 
 
-
-            <div className="container row text-md-center text-left mx-auto my-5">
+            {/*  <div className="container row text-md-center text-left mx-auto my-5">
                 <div className="col-12 col-md-6 col-lg-4  pb-4">
                     <div className="card">
                         <img src={img2} className="card-img-top img-fluid" alt="" />
@@ -130,12 +123,7 @@ const Service = () => {
                         </div>
                     </div>
                 </div>
-                <div className='home-service-btn container w-75 mt-2'>
-                    <button className='button-1'>SEE MORE</button>
-
-                </div>
-
-            </div>
+            </div> */}
         </ >
     );
 };

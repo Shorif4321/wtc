@@ -1,84 +1,103 @@
-.latest-head{
-    text-align: left;
-}
-.custom-service, .about-text, .latest{
-    color: #00A652;
-    font-size: 16px;
-    line-height: 20px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    padding: 0 10px 0px 0px;
-}
-.custom-service-2, .about-h, .img-text{
-    font-size: 38px;
-    line-height: 45px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-}
-.service-btn, .custom-padding{
-    font-size: 16px;
-    line-height: 28px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    padding: 16px 32px;
-    border-radius: 0px;
-    background-color: #00A652;
-}
-.bg-none{
-    background-color: #ffffff;
-    border: none;
-    color: #00A652;
-}
-.btn-card{
-    font-size: 18px;
-    line-height: 22px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 500;
-    text-align: left;
-}
-.btn-success:hover {
-    color: #218838;
-    background-color: #fff;
-    transition: 0.6s;
-}
-.img-box{
-    background: rgba(25,64,121,0.8);
-    width: 446px;
-    height: 150px;
-    position: absolute;
-    left: 22%;
-    top: 69%;
-}
-.img-box-2{
-    background: rgba(25,64,121,0.8);
-    width: 350px;
-    height: 56px;
-    position: absolute;
-    left: 0;
-    top: 81%;
-}
-.next-btn{
-    width: 78px;
-    height: 60px;
-    background-color: #218838;
-    opacity: 0.3;
-    border-radius: 0px;
-}
-.next-btn:hover{
-    background-color: #218838;
-    opacity: 1;
-    transition: 0.6s;
-    color: #fff;
-}
-.title button{
-    float: right;
-    margin-left: 15px;
-}
+ .latest-head {
+     text-align: left;
+ }
 
-@media only screen and (max-width: 667px) {
-    .latest-head{
-        text-align: center;
-    }
-}
-@media only screen and (max-width:991px) and (min-width:668px){}
-@media only screen and (max-width: 1200px) and (min-width:992px) {}
+
+ .custom-service,
+ .about-text,
+ .latest {
+     color: #00A652;
+     font-size: 16px;
+     line-height: 20px;
+     font-family: 'Inter', sans-serif;
+     font-weight: 400;
+     padding: 0 10px 0px 0px;
+ }
+
+ .custom-service-2,
+ .about-h,
+ .img-text {
+     font-size: 38px;
+     line-height: 45px;
+     font-family: 'Inter', sans-serif;
+     font-weight: 700;
+ }
+
+ .service-btn,
+ .custom-padding {
+     font-size: 16px;
+     line-height: 28px;
+     font-family: 'Inter', sans-serif;
+     font-weight: 500;
+     padding: 16px 32px;
+     border-radius: 0px;
+     background-color: #00A652;
+ }
+
+ .bg-none {
+     background-color: #ffffff;
+     border: none;
+     color: #00A652;
+ }
+
+ .btn-card {
+     font-size: 18px;
+     line-height: 22px;
+     font-family: 'Inter', sans-serif;
+     font-weight: 500;
+     text-align: left;
+ }
+
+ .btn-success:hover {
+     color: #218838;
+     background-color: #fff;
+     transition: 0.6s;
+ }
+
+ .img-box {
+     background: rgba(25, 64, 121, 0.8);
+     width: 446px;
+     height: 150px;
+     position: absolute;
+     left: 22%;
+     top: 69%;
+ }
+
+ .img-box-2 {
+     background: rgba(25, 64, 121, 0.8);
+     width: 350px;
+     height: 56px;
+     position: absolute;
+     left: 0;
+     top: 81%;
+ }
+
+ .next-btn {
+     width: 78px;
+     height: 60px;
+     background-color: #218838;
+     opacity: 0.3;
+     border-radius: 0px;
+ }
+
+ .next-btn:hover {
+     background-color: #218838;
+     opacity: 1;
+     transition: 0.6s;
+     color: #fff;
+ }
+
+ .title button {
+     float: right;
+     margin-left: 15px;
+ }
+
+ @media only screen and (max-width: 667px) {
+     .latest-head {
+         text-align: center;
+     }
+ }
+
+ @media only screen and (max-width:991px) and (min-width:668px) {}
+
+ @media only screen and (max-width: 1200px) and (min-width:992px) {}

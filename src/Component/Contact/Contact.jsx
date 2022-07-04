@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import "./Contact.css"
 import map from "../../img/map.png"
 
 const Contact = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     return (
         <div>
             {/* ======= Gallery Banner ======== */}
