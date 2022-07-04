@@ -18,6 +18,9 @@ const HeadTop = () => {
             .then(data => setfos(data?.data))
     }, {})
 
+
+
+
     var date = new Date();
     var disPlayDate = date.toLocaleDateString(date, { weekday: 'long' });
     var hour = date.getHours(); // => 9
@@ -41,9 +44,9 @@ const HeadTop = () => {
                         </div>
                         <div className="col-6">
                             <div className="text-end">
-                                <a href="https://www.facebook.com/Shorifali4321" target="_blank"><img src={facebook} alt="" /></a>
-                                <a href="https://twitter.com/" target="_blank" className='mx-2'><img src={twitteer} alt="" /></a>
-                                <a href="https://www.linkedin.com/in/shorifulislamjs1/" target="_blank"><img src={linkdine} alt="" /></a>
+                                <a href={infos.facebook} target="_blank"><img src={facebook} alt="" /></a>
+                                <a href={infos.twitter} target="_blank" className='mx-2'><img src={twitteer} alt="" /></a>
+                                <a href={infos.linkdine} target="_blank"><img src={linkdine} alt="" /></a>
                             </div>
                         </div>
                     </div>
@@ -55,7 +58,6 @@ const HeadTop = () => {
                     <div className="row align-items-center">
 
                         <div className="col-lg-2 text-start">
-                            {/* <!--            <div className="col-md-2 col-sm-6 d-sm-none">--> */}
                             <div className="img-fluid text-left">
                                 <Link to="/">  <img src={img11} alt="" /></Link>
                             </div>
@@ -68,11 +70,11 @@ const HeadTop = () => {
                                 </div>
                                 <div className="col-lg-4 col-sm-4 d-flex align-items-center justify-content-end">
                                     <img src={location} className="img-fluid " alt="" />
-                                    <p className="ms-4 text-start">2416 Mapleview Drive <br /> <span className="i-color"> {infos.address?.slice(0, 60)} </span></p>
+                                    <p className="ms-4 text-start">Location <br /> <span className="i-color"> {infos.address}</span></p>
                                 </div>
                                 <div className="col-lg-4 col-sm-4 d-flex align-items-center justify-content-end">
                                     <img src={calendar} className="img-fluid " alt="" />
-                                    <p className="ms-4 text-start">Mon - Satday <br /> <span className="i-color">9.00am to 18.00pm</span></p>
+                                    <p className="ms-4 text-start">Mon - Thursday <br /> <span className="i-color">9.00am to 18.00pm</span></p>
                                 </div>
                             </div>
                         </div>

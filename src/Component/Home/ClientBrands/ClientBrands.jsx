@@ -2,12 +2,6 @@ import React, { useEffect, useState } from 'react';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./ClientBrands.css"
-import i1 from "../../../img/i1.svg"
-import i2 from "../../../img/i2.svg"
-import i3 from "../../../img/i3.svg"
-import i4 from "../../../img/i4.svg"
-import i5 from "../../../img/i5.svg"
-import i6 from "../../../img/i6.svg"
 import Slider from 'react-slick';
 
 const ClientBrands = () => {
@@ -65,7 +59,7 @@ const ClientBrands = () => {
             </div>
             <Slider {...settings}>
                 {
-                    homeSiders?.map(homeSlide => <div>
+                    homeSiders?.map(homeSlide => <div key={homeSlide.id}>
                         <img className='' src={`https://admin.waterchembd.com/storage/${homeSlide.image}`} alt="" />
                     </div>)
                 }

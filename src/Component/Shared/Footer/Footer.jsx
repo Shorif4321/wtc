@@ -25,7 +25,6 @@ const Footer = () => {
         fetch("https://admin.waterchembd.com/api/get-info")
             .then(res => res.json())
             .then(data => setfos(data?.data))
-        console.log(infos);
     }, {})
 
     return (
@@ -79,8 +78,8 @@ const Footer = () => {
                                         <img src={location} alt="" />
                                     </div>
                                     <div className='address'>
-                                        <span className=''>2416 Mapleview Drive</span> <br />
-                                        <span className=''>{infos.address?.slice(0, 60)}</span>
+                                        <span className=''>Location</span> <br />
+                                        <span className=''>{infos.address}</span>
                                     </div>
                                 </div>
                             </div>

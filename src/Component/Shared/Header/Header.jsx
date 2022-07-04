@@ -41,10 +41,9 @@ const Header = () => {
                                 <div class="menu">
                                     {
                                         drovdawnServices?.map(dropdawn => <ul key={dropdawn.id}>
-                                            <li><Link to="/service">Service &#x203A;</Link>
-
+                                            <li><Link to="/service"> Menu Items &#x203A;</Link>
                                                 <ul>
-                                                    <li> <Link to="/service"> Service {dropdawn.services.title}</Link> </li>
+                                                    <li> <Link to="/service">  {dropdawn.services.title}</Link> </li>
                                                     <li> <a href="https://www.google.com/"> Development soe mte tei </a> </li>
                                                     <li> <a href="https://www.google.com/"> Development soe mte tei </a> </li>
                                                     <li> <a href="https://www.google.com/"> Development soe mte tei </a> </li>
