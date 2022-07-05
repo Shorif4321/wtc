@@ -9,8 +9,7 @@ import { useEffect } from 'react';
 import { Dropdown } from 'bootstrap';
 
 const Header = () => {
-
-
+    //  ============= Product menu link data ============= //
     const [dropProducts, dripProducts] = useState([]);
     useEffect(() => {
         fetch("https://admin.waterchembd.com/api/get-products")
@@ -19,7 +18,7 @@ const Header = () => {
         console.log(dropProducts);
     }, {})
 
-
+    //  ============= service menu link data ============= //
     const [drovdawnServices, setDropdawnServices] = useState([]);
     useEffect(() => {
         fetch("https://admin.waterchembd.com/api/get-service-menus")
@@ -40,25 +39,18 @@ const Header = () => {
                             <div className='myBorder'>
                                 <Nav.Link ><Link className='route-item' to="about-us">About Us</Link></Nav.Link>
                             </div>
+
                             {/* =============== Product Drop Down start =============== */}
                             <NavDropdown className='myBorder route-item text-white' title="Product" id="collasible-nav-dropdown">
-                                {/*  {
-                                    dropProducts?.map(product => <Link to={`/productDetails/${product.id}`} className='product-url'>{product.title} </Link>)
-                                } */}
-
                                 {
-                                    drovdawnServices?.map(dropdawn =>
-                                        <ul className="product-url" key={dropdawn.id}>
+                                    dropProducts?.map(product =>
+                                        // console.log(product.id)
+                                        <Link to={`/productDetails/${product.id}`} className='product-link'> {product.title}
 
-                                            {
-                                                dropdawn.services.map(services =>
-                                                    <li className='footer-Nav'  ><Link className='footer-Nav' to={`/serviceDetails/${services.id}`}>{services.title}</Link>
-                                                    </li>
-                                                )
-                                            }
+                                        </Link>
 
-                                        </ul>
-                                    )}
+                                    )
+                                }
 
                             </NavDropdown>
 

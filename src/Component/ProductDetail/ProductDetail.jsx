@@ -9,8 +9,6 @@ const ProductDetail = () => {
 
 
     const { id } = useParams()
-
-
     const [productDetails, setproductDetails] = useState([]);
     useEffect(() => {
         fetch(`https://admin.waterchembd.com/api/get-product/${id}`)
@@ -20,23 +18,22 @@ const ProductDetail = () => {
     }, [id])
 
 
-
     return (
         <div>
             {/* Product details hero */}
             <div className='product-hero p-5'>
                 <div className='col-md-5 col-12  m-auto py-md-3'>
                     <h1>Our Machineries products</h1>
-                    <p className=''>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor tempus mauris ligula eget. Vehicula lorem sit integer volutpat nunc eu, consequat nisi. Phasellus tincidunt fames auctor vestibulum.</p>
+
                 </div>
             </div>
             {/* Details section start */}
 
             <section className='container'>
                 <div className='product-details'>
-                    <h1 className='text-start py-5 details-head' dangerouslySetInnerHTML={{ __html: productDetails.title }}></h1>
-                    <img className='img-fluid rounded w-100' src={`https://admin.waterchembd.com/storage/${productDetails.image}`} alt="" />
-                    <p dangerouslySetInnerHTML={{ __html: productDetails.description }}>
+                    <h1 className='text-start py-5 details-head' dangerouslySetInnerHTML={{ __html: productDetails?.title }}></h1>
+                    <img className='img-fluid rounded w-100' src={`https://admin.waterchembd.com/storage/${productDetails?.image}`} alt="" />
+                    <p dangerouslySetInnerHTML={{ __html: productDetails?.description }}>
                     </p>
                 </div>
             </section>

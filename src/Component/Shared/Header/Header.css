@@ -10,7 +10,7 @@
     color: white;
     line-height: 35px;
     font-size: 17px;
-    text-align: le;
+    text-align: left;
     transition: .5s;
 }
 
@@ -34,8 +34,6 @@
 .menu ul li {
     position: relative;
     border-radius: 5px;
-
-
 }
 
 .menu ul li ul {
@@ -43,18 +41,14 @@
     top: 0;
     left: 135px;
     width: 350px;
-
-
 }
 
 .menu ul li ul li {
     margin: 0px 0 -20px 0px;
     padding: 10px;
-    font-size: 15px;
+    font-size: 13px;
 
 }
-
-
 
 
 .logo {
@@ -157,7 +151,25 @@
 
 }
 
+.product-link {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    padding: 0px 7px;
+    font-size: 13px;
+    margin: 0px;
+    display: block;
+    text-align: left;
+    line-height: 15px;
+    margin: 10px 0;
+    padding: 7px;
+}
 
+.product-link:hover {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+}
 
 
 /* ======================= Media query start ===========================  */
@@ -239,17 +251,6 @@
 
         border-left: 0px solid white;
     }
-
-}
-
-.product-url {
-    text-decoration: none;
-    list-style: none;
-    color: white;
-    padding: 0px 7px;
-    font-size: 14px;
-    text-align: left;
-    margin: 0px;
 
 }
 

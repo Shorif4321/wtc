@@ -37,10 +37,12 @@ const NewsFeed = () => {
 
             {/* ========== newsFeed section start ==========*/}
             <section className='container py-5 my-3'>
-                <div className='d-md-flex justify-content-between'>
-                    <div className='col-12 col-md-8'>
-                        {
-                            newsfeeds?.map(newsfeed => <div key={newsfeed.id} className="text-start pb-5">
+
+                <div className='row'>
+                    {
+                        newsfeeds?.map(newsfeed => <div className='col-12 col-md-4'>
+
+                            <div className="text-start pb-5">
                                 <div className='newsFeed'>
                                     <img className='img-fluid rounded w-100' src={`https://admin.waterchembd.com/storage/${newsfeed.image}`} alt="" />
                                     <h1 dangerouslySetInnerHTML={{ __html: newsfeed.title }}></h1>
@@ -52,51 +54,17 @@ const NewsFeed = () => {
                                     <p dangerouslySetInnerHTML={{ __html: newsfeed.description.slice(0, 100) }}>
                                     </p>
                                     <button><Link className='newsFeedButton' to={`/newsFeedDetails/${newsfeed.id}`}>
-                                        Read More {newsfeed.id}
+                                        Read More
                                     </Link></button>
                                 </div>
-                            </div>)
-                        }
-
-
-
-                        {/*    <div className="text-left mt-5">
-                            <div className='newsFeed'>
-                                <img className='img-fluid' src={newFeed2} alt="" />
-                                <h1>Costs Related to Service Callouts and Repairs During the Contract</h1>
-                                <div className='d-flex'>
-                                    <span className='special-text'><img src={clock} alt="" /> September 7, 2016 </span>
-                                    <span className='special-text ml-4'><img src={eye} alt="" /> 834 </span>
-
-                                </div>
-                                <p>
-                                    Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem...
-
-                                </p>
-                                <button className='mb-5'>
-                                    Read More
-                                </button>
                             </div>
-                        </div> */}
-                    </div>
-                    <div className="col-12 col-md-4 ">
-                        <div className='search'>
-                            <div className='text-start'>
-
-                            </div>
-                            <div className='text-start'>
-                                <h3>RECENT POSTS</h3>
-                                <p><img className='me-2' src={circle} alt="" />Costs Related to Service Callouts and Repairs During the Contract</p>
-                                <p><img className='me-2' src={circle} alt="" />Cleaning Materials and Lubricants Required for Maintenance Cisits
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                        </div>)
+                    }
                 </div>
 
-            </section>
+            </section >
 
-        </div>
+        </div >
     );
 };
 

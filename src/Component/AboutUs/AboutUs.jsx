@@ -30,7 +30,7 @@ const AboutUs = () => {
                     <div className='py-4'>
                         <h1 id='about'>ABOUT US <br /> WTC PREMIUM WATER SOLUTIONS</h1>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis id sit faucibus elementum faucibus condimentum mauris. Suscipit penatibus pretium, semper arcu in feugiat habitasse ridiculus.
+                            {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis id sit faucibus elementum faucibus condimentum mauris. Suscipit penatibus pretium, semper arcu in feugiat habitasse ridiculus. */}
                         </p>
                     </div>
                 </div>

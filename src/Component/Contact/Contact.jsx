@@ -37,8 +37,8 @@ const Contact = () => {
                         <h2>Find Us</h2>
                         <h4>Location:</h4>
                         <p>{infos.address} </p>
-                        <h4>Phone: {infos.mobile}</h4>
-                        <p>1(800)-456-789</p>
+                        <h4>Phone: </h4>
+                        <p>{infos.mobile} <br /> {infos.telephone}</p>
                         <h4>Email:</h4>
                         <p>{infos.email}</p>
                     </div>

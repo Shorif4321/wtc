@@ -85,29 +85,6 @@
     color: #2B2B2B;
 }
 
-.search {
-    background: #DCE8F6;
-    padding: 30px;
-}
-
-.search h3 {
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 26px;
-    line-height: 31px;
-    color: #2B2B2B;
-}
-
-.search p {
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 33px;
-    color: #403F3F;
-}
-
 .form-control {
     width: 82%;
 }

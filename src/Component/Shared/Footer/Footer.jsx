@@ -9,7 +9,7 @@ import { HashLink } from 'react-router-hash-link';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
-    /* ======== service footer ========= */
+    // ======== service data ========= //
     const [drovdawnServices, setDropdawnServices] = useState([]);
     useEffect(() => {
         fetch("https://admin.waterchembd.com/api/get-service-menus")
@@ -17,7 +17,7 @@ const Footer = () => {
             .then(data => setDropdawnServices(data?.data))
     }, {})
 
-
+    // ======== location and  contact  data ========= //
     const [infos, setfos] = useState([]);
     useEffect(() => {
         fetch("https://admin.waterchembd.com/api/get-info")
@@ -26,7 +26,7 @@ const Footer = () => {
     }, {})
 
 
-
+    // ======== about data ========= //
     const [homeAbouts, setHomeAbouts] = useState([])
     useEffect(() => {
         fetch('https://admin.waterchembd.com/api/get-home-about')
@@ -75,7 +75,6 @@ const Footer = () => {
                                 {
                                     homeAbouts?.map(homeAbout => <div key={homeAbout.id}>
                                         <p className="w-100 text-left">{homeAbout.sub_title}</p>
-
                                     </div>)
 
                                 }
