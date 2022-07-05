@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import emailjs from '@emailjs/browser';
 import "./Contact.css"
 
 const Contact = () => {
@@ -11,8 +12,17 @@ const Contact = () => {
         fetch("https://admin.waterchembd.com/api/get-info")
             .then(res => res.json())
             .then(data => setfos(data?.data))
-        console.log(infos);
     }, {})
+
+    /* ============ template ready  but need gmail and password for setup new account in email js */
+    // const handleSubmite = (e) => {
+    //     emailjs.sendForm('service_tevpfja', 'template_0vvc7rm', e.target, 'oRL_biecLPz6gAjPH').then(res => {
+    //         alert("Your Message send successfully");
+    //     }).catch(err => alert("Your information mail is not sent"))
+
+    //     e.preventDefault()
+    //     e.target.reset()
+    // }
 
     return (
         <div>
@@ -48,29 +58,56 @@ const Contact = () => {
             {/* ======= contact from start ======== */}
             <section id='contact' className='my-5 py-5 from-main'>
                 <div className='container px-sm-5'>
-                    <h1 className=''>Send Message</h1>
-                    <div className='d-md-flex px-md-5 contact-from mt-4 my-1'>
-                        <input className=' mx-md-2 col-12 col-md-6' type="text" placeholder='Name' />
-                        <input className='mx-md-2 col-12 col-md-6' type="email" placeholder='Email' />
-                    </div>
-                    <div className='textarea-box'>
-                        <textarea className='w-100 p-3' name="Message" id="" cols="" rows="7" placeholder='Messages'></textarea>
-                    </div>
-                    <div className="form-group row">
-                        <div className="col-12 text-center">
-                            <div className="form-check d-flex justify-content-center">
-                                <div>
-                                    <input className=" form-check-input" type="checkbox" id="gridCheck1" />
-                                </div>
-                                <div>
-                                    <label className="form-check-label" htmlFor="gridCheck1">
-                                        I agree that my submitted data is being collected and stored.
-                                    </label>
+                    <form action=''/*  onSubmit={handleSubmite} */>
+                        <h1 className=''>Send Message</h1>
+                        <div className='d-md-flex px-md-5 contact-from mt-4 my-1'>
+
+                            <input
+                                className=' mx-md-2 col-12 col-md-6'
+                                // onChange={handleNameChange}
+
+                                type="text"
+                                name="name"
+                                placeholder='Name'
+                                required />
+
+                            <input
+                                className='mx-md-2 col-12 col-md-6'
+                                // onChange={handleEmailChange}
+                                name="user_email"
+                                type="email"
+                                placeholder='Email'
+                                required />
+
+                        </div>
+                        <div className='textarea-box'>
+                            <textarea
+                                className='w-100 p-3'
+                                //onChange={handleMessageChange}
+
+                                name="message"
+                                id=""
+                                cols=""
+                                rows="7"
+                                placeholder='Messages'  >
+                            </textarea>
+                        </div>
+                        <div className="form-group row">
+                            <div className="col-12 text-center">
+                                <div className="form-check d-flex justify-content-center">
+                                    <div>
+                                        <input className=" form-check-input" type="checkbox" id="gridCheck1" />
+                                    </div>
+                                    <div>
+                                        <label className="form-check-label" htmlFor="gridCheck1">
+                                            I agree that my submitted data is being collected and stored.
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <button className='form-button'>Send message</button>
+                        <button className='form-button' type='submit' >Send message</button>
+                    </form>
                 </div>
             </section>
 
