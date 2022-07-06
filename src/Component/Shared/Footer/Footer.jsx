@@ -25,14 +25,12 @@ const Footer = () => {
             .then(data => setfos(data?.data))
     }, {})
 
-
-    // ======== about data ========= //
+    // ======== About data ========= //
     const [homeAbouts, setHomeAbouts] = useState([])
     useEffect(() => {
         fetch('https://admin.waterchembd.com/api/get-home-about')
             .then(res => res.json())
             .then(data => setHomeAbouts(data.data))
-        console.log(homeAbouts);
     }, [])
 
     return (
@@ -69,12 +67,11 @@ const Footer = () => {
                     </div>
                     <div className="footer-content mt-5">
                         <div className="row justify-content-between">
-                            <div className="col-lg-3 col-sm-12 text-start">
+                            <div className="col-lg-3 col-sm-12 text-start footer-custom">
                                 <h6>About Us</h6>
-
                                 {
                                     homeAbouts?.map(homeAbout => <div key={homeAbout.id}>
-                                        <p className="w-100 text-left">{homeAbout.sub_title}</p>
+                                        <p className="w-100 text-left footer-custom">{homeAbout.sub_title}</p>
                                     </div>)
 
                                 }
@@ -88,7 +85,7 @@ const Footer = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-2 col-sm-12 text-start">
+                            <div className="col-lg-2 col-sm-12 text-start footer-custom">
                                 <ul>
                                     <li>Useful Links</li>
                                     <li><Link className='footer-Nav' to="/about-us">About Us</Link></li>
@@ -101,29 +98,26 @@ const Footer = () => {
                                     <li><Link className='footer-Nav' to="/">Home</Link></li>
                                 </ul>
                             </div>
-                            <div className="col-lg-3 col-sm-12 text-start">
+                            <div className="col-lg-3 col-sm-12 text-start footer-custom">
                                 <ul>
                                     <li>Services</li>
 
                                     {
-                                        drovdawnServices?.map(dropdawn =>
-                                            <ul key={dropdawn.id}>
-                                                <li><Link className='d-none' to="/service">{dropdawn.menu_name} &#x203A;</Link>
-                                                    {
-                                                        dropdawn.services.map(services =>
-                                                            <li className='footer-Nav'  ><Link className='footer-Nav' to={`/serviceDetails/${services.id}`}>{services.title}</Link>
-                                                            </li>
-                                                        )
-                                                    }
-                                                </li>
-                                            </ul>
+                                        drovdawnServices?.map(dropdawn => <ul key={dropdawn.id}>
+                                            <li ><Link className='d-none' to="/service">{dropdawn.menu_name} &#x203A;</Link>
+                                                {
+                                                    dropdawn.services.map(services =>
+                                                        <li key={services.id} className='footer-Nav'  ><Link className='footer-Nav' to={`/serviceDetails/${services.id}`}>{services.title}</Link>
+                                                        </li>
+                                                    )
+                                                }
+                                            </li>
+                                        </ul>
                                         )}
-
-
                                 </ul>
 
                             </div>
-                            <div className="col-lg-3 col-sm-12 text-start">
+                            <div className="col-lg-3 col-sm-12 text-start footer-custom">
                                 <ul>
                                     <li>Contact Info</li>
                                     <li>Address:</li>

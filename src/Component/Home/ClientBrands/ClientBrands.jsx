@@ -64,29 +64,6 @@ const ClientBrands = () => {
                     </div>)
                 }
             </Slider>
-
-
-            {/*  <Slider {...settings}>
-
-                <div>
-                    <img className='img-fluid' src={i1} alt="" />
-                </div>
-                <div>
-                    <img src={i2} className="img-fluid" alt="" />
-                </div>
-                <div>
-                    <img src={i6} className="img-fluid" alt="" />
-                </div>
-                <div>
-                    <img src={i3} className="img-fluid" alt="" />
-                </div>
-                <div>
-                    <img src={i4} className="img-fluid" alt="" />
-                </div>
-                <div>
-                    <img src={i5} className="img-fluid" alt="" />
-                </div>
-            </Slider> */}
         </div>
     );
 };

@@ -1,6 +1,4 @@
-
 import "./Service.css"
-import img2 from "../../../img/2.png"
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from "react";
 import SingleService from "./SingleService/SingleService";
@@ -8,7 +6,6 @@ const Service = () => {
     useEffect(() => {
         window.scrollTo(0, 0)
     }, [])
-
 
     const [services, setServices] = useState([]);
     useEffect(() => {

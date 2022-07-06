@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import "./Gallery.css"
 import rightArrow from "../../img/right.png"
-import galleryImage from "../../img/galler1.png"
-import repair from "../../img/repair.png"
-import galleryLast from "../../img/galleryLast.png"
 import { Link } from 'react-router-dom';
 
 const Gallery = () => {

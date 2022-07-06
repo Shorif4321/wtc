@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const SingleService = (props) => {
     const { title, description, image, id } = props?.service;
 
     return (
-
         <div className="col-12 col-md-6 col-lg-4  pb-4">
             <div className="card">
                 <img src={`https://admin.waterchembd.com/storage/${image}`} alt="" />

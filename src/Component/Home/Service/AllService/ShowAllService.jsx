@@ -35,9 +35,6 @@ const ShowAllService = () => {
                 }
 
             </div>
-
-
-
         </div >
     );
 };

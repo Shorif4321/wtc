@@ -1,10 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import "./NewsFeed.css"
-import newsFeedImage from "../../img/newsFeed1.png"
-import newFeed2 from "../../img/newsfeed2.png"
 import clock from "../../img/clock.png"
 import eye from "../../img/eye.png"
-import circle from "../../img/cercle.png"
 import { Link } from 'react-router-dom';
 
 
@@ -40,7 +37,7 @@ const NewsFeed = () => {
 
                 <div className='row'>
                     {
-                        newsfeeds?.map(newsfeed => <div className='col-12 col-md-4'>
+                        newsfeeds?.map(newsfeed => <div key={newsfeed.id} className='col-12 col-md-4'>
 
                             <div className="text-start pb-5">
                                 <div className='newsFeed'>

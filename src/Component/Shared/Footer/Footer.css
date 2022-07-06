@@ -53,6 +53,7 @@
     line-height: 28px;
     color: #fff;
     opacity: 0.7;
+
 }
 
 .footer-content ul li:first-child {
@@ -137,11 +138,30 @@
 
 
     .footer-location {
-        margin: 0px 0 0px 0px;
+        margin: 0px 0px 0px 0px;
+        text-align: center;
     }
 
     .social-links-footer {
         text-align: center;
     }
 
+    .footer-custom {
+        text-align: center !important;
+    }
+
+    .footer-content ul li {
+        margin: 15px 0px 0px 0px;
+    }
+
+}
+
+@media only screen and (max-width:991px) and (min-width:668px) {
+    .footer-custom {
+        text-align: center !important;
+    }
+
+    .footer-content ul li {
+        margin: 15px 0px 0px 0px;
+    }
 }

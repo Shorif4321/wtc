@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import "./About.css"
-import aboutImag from "../../../img/5.png"
 import call from "../../../img/call icons.svg"
 import location from "../../../img/location icons.svg"
 import { Link } from 'react-router-dom';
@@ -11,7 +10,6 @@ const About = () => {
         fetch("https://admin.waterchembd.com/api/get-info")
             .then(res => res.json())
             .then(data => setfos(data?.data))
-        console.log(infos);
     }, {})
 
 

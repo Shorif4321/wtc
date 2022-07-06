@@ -14,7 +14,6 @@ const ProductDetail = () => {
         fetch(`https://admin.waterchembd.com/api/get-product/${id}`)
             .then(res => res.json())
             .then(data => setproductDetails(data?.data))
-        console.log(productDetails);
     }, [id])
 
 
@@ -27,8 +26,8 @@ const ProductDetail = () => {
 
                 </div>
             </div>
-            {/* Details section start */}
 
+            {/* Details section start */}
             <section className='container'>
                 <div className='product-details'>
                     <h1 className='text-start py-5 details-head' dangerouslySetInnerHTML={{ __html: productDetails?.title }}></h1>
@@ -37,7 +36,6 @@ const ProductDetail = () => {
                     </p>
                 </div>
             </section>
-
             <ContactInfo></ContactInfo>
         </div>
     );

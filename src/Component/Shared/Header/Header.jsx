@@ -15,7 +15,6 @@ const Header = () => {
         fetch("https://admin.waterchembd.com/api/get-products")
             .then(res => res.json())
             .then(data => dripProducts(data?.data))
-        console.log(dropProducts);
     }, {})
 
     //  ============= service menu link data ============= //
@@ -43,35 +42,27 @@ const Header = () => {
                             {/* =============== Product Drop Down start =============== */}
                             <NavDropdown className='myBorder route-item text-white' title="Product" id="collasible-nav-dropdown">
                                 {
-                                    dropProducts?.map(product =>
-                                        // console.log(product.id)
-                                        <Link to={`/productDetails/${product.id}`} className='product-link'> {product.title}
-
-                                        </Link>
+                                    dropProducts?.map(product => <Link key={product.id} to={`/productDetails/${product.id}`} className='product-link'> {product.title}
+                                    </Link>
 
                                     )
                                 }
-
                             </NavDropdown>
-
 
                             {/* =============== Service Drop Down start =============== */}
                             <NavDropdown className='myBorder route-item' title="Service" id="collasible-nav-dropdown">
                                 <div class="menu">
                                     {
-                                        drovdawnServices?.map(dropdawn =>
-
-                                            <ul key={dropdawn.id}>
-                                                <li><Link className='footer-Nav' to="/service">{dropdawn.menu_name} &#x203A;</Link>
-                                                    <ul>
-                                                        {
-                                                            dropdawn.services.map(services =>
-                                                                <li> <Link className='footer-Nav' to={`/serviceDetails/${services.id}`}>  {services.title}</Link> </li>
-                                                            )
-                                                        }
-                                                    </ul>
-                                                </li>
-                                            </ul>
+                                        drovdawnServices?.map(dropdawn => <ul key={dropdawn.id}>
+                                            <li><Link className='footer-Nav' to="/service">{dropdawn.menu_name} &#x203A;</Link>
+                                                <ul>
+                                                    {
+                                                        dropdawn.services.map(services => <li key={services.id}> <Link className='footer-Nav' to={`/serviceDetails/${services.id}`}>  {services.title}</Link> </li>
+                                                        )
+                                                    }
+                                                </ul>
+                                            </li>
+                                        </ul>
                                         )}
                                 </div>
                             </NavDropdown>

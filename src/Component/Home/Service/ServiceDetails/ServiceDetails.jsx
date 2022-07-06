@@ -1,8 +1,5 @@
 import React from 'react';
 import "./ServiceDetails.css"
-import ServiceDetail from "../../../../img/serviceDetails.png"
-import okay2 from "../../../../img/okay2.png"
-import same from "../../../../img/same.png"
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
@@ -12,7 +9,6 @@ const ServiceDetails = () => {
         window.scrollTo(0, 0)
     }, [])
 
-
     const { id } = useParams()
 
     const [readDetails, SetReadDetails] = useState([]);
@@ -20,7 +16,6 @@ const ServiceDetails = () => {
         fetch(`https://admin.waterchembd.com/api/get-service/${id}`)
             .then(res => res.json())
             .then(data => SetReadDetails(data.data))
-        console.log(readDetails);
     }, ([id]))
 
 

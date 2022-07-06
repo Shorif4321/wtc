@@ -25,7 +25,6 @@ const NewsFeedDetails = () => {
         fetch(' https://admin.waterchembd.com/api/get-news')
             .then(res => res.json())
             .then(data => setNewsfeeds(data?.data))
-        console.log(newsfeeds);
     }, [])
 
 
@@ -40,7 +39,6 @@ const NewsFeedDetails = () => {
             </div>
 
             {/* Details section start */}
-
             <section className='container mb-5 d-md-flex'>
                 <div className='product-details  col-md-8'>
                     <h1 className='text-start py-5 details-head' dangerouslySetInnerHTML={{ __html: productDetails.title }}></h1>
@@ -54,7 +52,7 @@ const NewsFeedDetails = () => {
                             <div className='text-start'>
                                 <h3 className='recent-post-head'>RECENT POSTS</h3>
                                 {
-                                    newsfeeds.map(news => <Link to={`/newsFeedDetails/${news.id}`} className="recent-news"><p className='recent-news'><img className='me-2' src={circle} alt="" />{news.title}</p></Link>)
+                                    newsfeeds.map(news => <Link key={news.id} to={`/newsFeedDetails/${news.id}`} className="recent-news"><p className='recent-news'><img className='me-2' src={circle} alt="" />{news.title}</p></Link>)
 
                                 }
                             </div>

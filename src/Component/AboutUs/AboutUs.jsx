@@ -29,9 +29,6 @@ const AboutUs = () => {
                 <div className='col-md-7 mx-auto py-5'>
                     <div className='py-4'>
                         <h1 id='about'>ABOUT US <br /> WTC PREMIUM WATER SOLUTIONS</h1>
-                        <p>
-                            {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis id sit faucibus elementum faucibus condimentum mauris. Suscipit penatibus pretium, semper arcu in feugiat habitasse ridiculus. */}
-                        </p>
                     </div>
                 </div>
             </section>
@@ -39,7 +36,7 @@ const AboutUs = () => {
             <div className='my-5 py-5'>
 
                 {
-                    about?.map(abou => <section className='container d-md-flex justify-content-between align-items-center'>
+                    about?.map(abou => <section key={abou.id} className='container d-md-flex justify-content-between align-items-center'>
                         <div className='wtc-left col-12 col-md-5 col-lg-5'>
                             <img className='about-imag1 rounded img-fluid' src={`https://admin.waterchembd.com/storage/${abou.image}`} alt="" />
 

@@ -1,14 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import "./LatestNews.css"
-import imgl1 from "../../../img/l1.png"
-import imgl2 from "../../../img/l2.png"
-import imgl3 from "../../../img/l3.png"
 import { Link } from 'react-router-dom';
 
 const LatesNews = () => {
-
-
-
     const [newses, setNewses] = useState([])
     useEffect(() => {
         fetch(' https://admin.waterchembd.com/api/get-news')

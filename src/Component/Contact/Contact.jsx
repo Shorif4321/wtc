@@ -15,14 +15,14 @@ const Contact = () => {
     }, {})
 
     /* ============ template ready  but need gmail and password for setup new account in email js */
-    // const handleSubmite = (e) => {
-    //     emailjs.sendForm('service_tevpfja', 'template_0vvc7rm', e.target, 'oRL_biecLPz6gAjPH').then(res => {
-    //         alert("Your Message send successfully");
-    //     }).catch(err => alert("Your information mail is not sent"))
+    const handleSubmite = (e) => {
+        emailjs.sendForm('service_1wgamld', 'template_35p7kz9', e.target, 'lR6am4ECiMKuJVZYl').then(res => {
+            alert("Your Message send successfully");
+        }).catch(err => alert("Your information mail is not sent"))
 
-    //     e.preventDefault()
-    //     e.target.reset()
-    // }
+        e.preventDefault()
+        e.target.reset()
+    }
 
     return (
         <div>
@@ -58,14 +58,12 @@ const Contact = () => {
             {/* ======= contact from start ======== */}
             <section id='contact' className='my-5 py-5 from-main'>
                 <div className='container px-sm-5'>
-                    <form action=''/*  onSubmit={handleSubmite} */>
+                    <form action='' onSubmit={handleSubmite}>
                         <h1 className=''>Send Message</h1>
                         <div className='d-md-flex px-md-5 contact-from mt-4 my-1'>
 
                             <input
                                 className=' mx-md-2 col-12 col-md-6'
-                                // onChange={handleNameChange}
-
                                 type="text"
                                 name="name"
                                 placeholder='Name'
@@ -73,7 +71,7 @@ const Contact = () => {
 
                             <input
                                 className='mx-md-2 col-12 col-md-6'
-                                // onChange={handleEmailChange}
+
                                 name="user_email"
                                 type="email"
                                 placeholder='Email'
@@ -83,8 +81,6 @@ const Contact = () => {
                         <div className='textarea-box'>
                             <textarea
                                 className='w-100 p-3'
-                                //onChange={handleMessageChange}
-
                                 name="message"
                                 id=""
                                 cols=""
@@ -110,8 +106,6 @@ const Contact = () => {
                     </form>
                 </div>
             </section>
-
-
         </div>
     );
 };
