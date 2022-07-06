@@ -38,7 +38,6 @@ const Header = () => {
                             <div className='myBorder'>
                                 <Nav.Link ><Link className='route-item' to="about-us">About Us</Link></Nav.Link>
                             </div>
-
                             {/* =============== Product Drop Down start =============== */}
                             <NavDropdown className='myBorder route-item text-white' title="Product" id="collasible-nav-dropdown">
                                 {
