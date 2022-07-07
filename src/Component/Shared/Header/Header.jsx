@@ -65,7 +65,6 @@ const Header = () => {
                                         )}
                                 </div>
                             </NavDropdown>
-
                             <div className='myBorder'>
                                 <Nav.Link> <Link className=' route-item' to="news-feed">newsFeed</Link> </Nav.Link>
                             </div>
@@ -75,7 +74,6 @@ const Header = () => {
                             <div className='myBorder'>
                                 <Nav.Link> <Link className=' route-item' to="gallery">gallery</Link> </Nav.Link>
                             </div>
-
                             <div className='myBorder'>
                                 <Nav.Link > <Link className=' route-item text-right' to="contact-us ">contact us</Link>  </Nav.Link>
                             </div>
