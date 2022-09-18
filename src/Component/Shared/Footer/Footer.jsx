@@ -147,7 +147,7 @@ const Footer = () => {
                     <div className="row">
                         <div className="col-md-12 ">
                             <div className="footer-end d-md-flex justify-content-between">
-                                <h6>@2022 Top It Ltd. All rights reserved.</h6>
+                                <h6> <a className='text-white text-decoration-none' target="_blank" href="https://topitltd.com/">@2022 Top It Ltd. All rights reserved.</a> </h6>
                                 <h6>Partner & Contribute</h6>
 
                             </div>
