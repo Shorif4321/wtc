@@ -1,0 +1,14 @@
+.client-brands img {
+    height: 200px;
+    width: 150px;
+    object-fit: contain;
+}
+
+@media only screen and (max-width:991px) and (min-width:668px) {
+    .client-brands img {
+        height: 200px;
+        width: 200px;
+        object-fit: contain;
+    }
+
+}

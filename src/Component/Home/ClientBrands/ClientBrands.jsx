@@ -54,13 +54,13 @@ const ClientBrands = () => {
         <div className=' my-5 pt-5 px-5 container'>
             <div className="title mb-5">
                 <h2 className="text-uppercase custom-service-2 mb-3 text-center">Trusted by over 10k clients & brands</h2>
-                <h3 className="text-center custom-service text-muted ">Lorem ipsum dolor sit amet, solor ut adipiscing elit.
-                </h3>
+                {/* <h3 className="text-center custom-service text-muted ">Lorem ipsum dolor sit amet, solor ut adipiscing elit.
+                </h3> */}
             </div>
             <Slider {...settings}>
                 {
-                    homeSiders?.map(homeSlide => <div key={homeSlide.id}>
-                        <img className='' src={`https://admin.waterchembd.com/storage/${homeSlide.image}`} alt="" />
+                    homeSiders?.map(homeSlide => <div className='client-brands' key={homeSlide.id}>
+                        <img className='img-fluid' src={`https://admin.waterchembd.com/storage/${homeSlide.image}`} alt="" />
                     </div>)
                 }
             </Slider>

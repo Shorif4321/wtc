@@ -33,7 +33,7 @@ const ServiceDetails = () => {
                 <div className='text-start'>
                     <h2>{readDetails.title}</h2>
                     <img className='img-fluid rounded ' src={`https://admin.waterchembd.com/storage/${readDetails.image}`} alt="" />
-                    <p className="" dangerouslySetInnerHTML={{ __html: readDetails.description }} />
+                    <p className="" dangerouslySetInnerHTML={{ __html: readDetails?.description }} />
                 </div>
             </section>
 

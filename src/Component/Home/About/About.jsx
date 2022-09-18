@@ -39,8 +39,7 @@ const About = () => {
                                     <div className="about-section">
                                         <img className="card-img-top img-fluid" src={`https://admin.waterchembd.com/storage/${homeAbout.image}`} alt="" />
                                         <div className="img-box5">
-                                            <h2 className="text-white font-weight-bold text-left mt-4 experience">10+ Years <br />Working
-                                                Experience</h2>
+                                            <h2 className="text-white font-weight-bold text-left mt-4 experience">22 years field experience</h2>
                                         </div>
                                     </div>
                                 </div>
